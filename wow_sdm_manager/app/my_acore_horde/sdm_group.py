@@ -29,8 +29,8 @@ class MacroGroupEnum:
         MacroEnum.f_00_common__1009_fly_down,
         MacroEnum.f_00_common__1010_x32_speed,
         # Mount
-        MacroEnum.f_00_common__1011_MountUp_zhTW,
-        MacroEnum.f_00_common__1012_MountDown_zhTW,
+        MacroEnum.f_00_common__1011_MountUp_zhCN,
+        MacroEnum.f_00_common__1012_MountDown_zhCN,
         # Multi-box
         MacroEnum.f_00_common__1101_target_party,
         MacroEnum.f_00_common__1102_target_raid,
@@ -61,7 +61,7 @@ class MacroGroupEnum:
         # Buff
         MacroEnum.f_00_common__2003_buff_tank,
         MacroEnum.f_00_common__2001_buff_physics_dps,
-        MacroEnum.f_02_paladin__0_common__11101_consumable,
+        MacroEnum.f_02_paladin__0_common__11105_consumable_60_multibox,
         MacroEnum.f_02_paladin__0_common__11111_clear_debuff_zhCN,
         MacroEnum.f_02_paladin__1_protect_retri__11311_buff_self_alliance_zhCN,
         # Act

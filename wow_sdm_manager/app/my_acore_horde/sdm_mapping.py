@@ -19,8 +19,8 @@ CharMap = exp03_wotlk.CharLvlMapping
 SdmMapping = exp03_wotlk.SdmMapping
 
 dir_here = Path.dir_here(__file__)
-dir_game_client = dir_here.joinpath("tmp", "world_of_warcraft_zhCN")  # Test
-# dir_game_client = dir_here.joinpath("tmp", "world_of_warcraft_zhCN")  # Real
+# dir_game_client = dir_here.joinpath("tmp", "world_of_warcraft_zhCN")  # Test
+dir_game_client = Path(r"C:\Users\husan\Documents\Games\WoW-Root\Client\World-of-Warcraft-3.3.5-zhCN")  # Real
 
 client = exp03_wotlk.Client(
     locale="zhCN",
@@ -44,9 +44,9 @@ char_macros = concat_lists(
     CharMap.make_many(
         CharGrpEnum.paladin_protect_retri, MacroGroupEnum.paladin_protect_retri
     ),
-    CharMap.make_many(
-        CharGrpEnum.shaman_elemental_resto, MacroGroupEnum.shaman_elemental_resto
-    ),
+    # CharMap.make_many(
+    #     CharGrpEnum.shaman_elemental_resto, MacroGroupEnum.shaman_elemental_resto
+    # ),
 )
 
 # ==============================================================================
