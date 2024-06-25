@@ -3,7 +3,7 @@ character:
   name:
   realm:
 type: b
-id: 14321
+id: 13321
 icon:
 description: |
   给猎人的中频输出循环技能添加给敌人上 Debuff 的功能. 只能用于单机 GM, 用来模拟团队 Debuff. 该技能放在 3 号键位上.

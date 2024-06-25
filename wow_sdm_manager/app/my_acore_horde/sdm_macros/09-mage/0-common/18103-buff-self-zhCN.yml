@@ -3,7 +3,7 @@ character:
   name:
   realm:
 type: b
-id: 19103
+id: 18103
 icon:
 description: |
   给自己上 Buff. 上 熔火护甲 然后给其他法系 DPS 目标上 专注魔法. 这个 /target 的目标就是其他法系 DPS 的名字.

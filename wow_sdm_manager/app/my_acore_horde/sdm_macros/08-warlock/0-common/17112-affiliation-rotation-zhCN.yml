@@ -3,7 +3,7 @@ character:
   name:
   realm:
 type: b
-id: 18112
+id: 17112
 icon:
 description: |
   痛苦术的输出循环. 这是在 BIS 装备的急速和蓝量下的情况. 急速越低, 技能总数越少, 装备越好, 生命分流频率越低.

@@ -3,7 +3,7 @@ character:
   name:
   realm:
 type: b
-id: 18111
+id: 17111
 icon:
 description: |
   恶魔术的输出循环. 这是在 BIS 装备的急速和蓝量下的情况. 急速越低, 技能总数越少, 装备越好, 生命分流频率越低.

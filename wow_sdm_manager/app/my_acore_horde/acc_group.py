@@ -5,8 +5,10 @@ This module can help you organize your enum into group, made it easier to
 construct mappings later.
 """
 
-from ...vendor.wow_sdm.api import get_values
+from ...vendor.importer import wow_sdm
 from .acc_enum import AccountEnum, CharacterEnum
+
+get_values = wow_sdm.get_values
 
 
 # ==============================================================================
@@ -28,6 +30,10 @@ class CharacterGroupEnum:
         CharacterEnum.rab03_AzerothCore_sc,
         CharacterEnum.rab04_AzerothCore_sd,
         CharacterEnum.rab05_AzerothCore_se,
+    ]
+
+    hunter_beast_survival = [
+        CharacterEnum.husanhe_AzerothCore_shootingrab,
     ]
 
 

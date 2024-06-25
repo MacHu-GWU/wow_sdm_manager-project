@@ -5,6 +5,7 @@ from .acc_dataset import ds
 
 # fmt: off
 class AccountEnum:
+    husanhe = ds.accounts["husanhe"]
     rab01 = ds.accounts["rab01"]
     rab02 = ds.accounts["rab02"]
     rab03 = ds.accounts["rab03"]
@@ -13,6 +14,7 @@ class AccountEnum:
 
 
 class RealmEnum:
+    husanhe_AzerothCore = ds.accounts["husanhe"].realms_mapper["AzerothCore"]
     rab01_AzerothCore = ds.accounts["rab01"].realms_mapper["AzerothCore"]
     rab02_AzerothCore = ds.accounts["rab02"].realms_mapper["AzerothCore"]
     rab03_AzerothCore = ds.accounts["rab03"].realms_mapper["AzerothCore"]
@@ -21,6 +23,8 @@ class RealmEnum:
 
 
 class CharacterEnum:
+    husanhe_AzerothCore_shootingrab = ds.accounts["husanhe"].realms_mapper["AzerothCore"].characters_mapper["shootingrab"]
+    husanhe_AzerothCore_fatbird = ds.accounts["husanhe"].realms_mapper["AzerothCore"].characters_mapper["fatbird"]
     rab01_AzerothCore_sa = ds.accounts["rab01"].realms_mapper["AzerothCore"].characters_mapper["sa"]
     rab02_AzerothCore_sb = ds.accounts["rab02"].realms_mapper["AzerothCore"].characters_mapper["sb"]
     rab03_AzerothCore_sc = ds.accounts["rab03"].realms_mapper["AzerothCore"].characters_mapper["sc"]

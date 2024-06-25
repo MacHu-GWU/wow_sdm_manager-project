@@ -6,7 +6,7 @@ construct mappings later.
 """
 
 from ordered_set import OrderedSet
-from ...vendor.wow_sdm.api import get_values
+from ...vendor.importer import wow_sdm
 from .sdm_enum import MacroEnum
 
 
@@ -14,7 +14,7 @@ from .sdm_enum import MacroEnum
 # START of manual editing
 # ==============================================================================
 class MacroGroupEnum:
-    all_macros = get_values(MacroEnum)
+    all_macros = wow_sdm.get_values(MacroEnum)
 
     acc_common = [
         # GM command
@@ -89,6 +89,25 @@ class MacroGroupEnum:
         MacroEnum.f_05_shaman__1_elemental_resto__14312_burst_zhCN,
     ]
     shaman_elemental_resto = OrderedSet(shaman_elemental_resto)
+
+    hunter_beast_survival = [
+        MacroEnum.f_00_common__2001_buff_physics_dps,
+        MacroEnum.f_04_hunter__0_common__13101_consumable,
+        # Act
+        MacroEnum.f_04_hunter__0_common__13102_misdirect_zhCN,
+        MacroEnum.f_04_hunter__0_common__13103_tranquil_zhCN,
+        MacroEnum.f_04_hunter__0_common__13104_pack_aspect_zhCN,
+        MacroEnum.f_04_hunter__0_common__13105_viper_aspect_zhCN,
+        MacroEnum.f_04_hunter__0_common__13106_burst_zhCN,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13301_buff_self_zhCN,
+        MacroEnum.f_04_hunter__0_common__13111_act1_zhCN,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13312_act2_zhCN,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13313_act3_zhCN,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13314_act4_zhCN,
+        MacroEnum.f_04_hunter__0_common__13121_marksmanship_rotation_zhCN,
+        MacroEnum.f_04_hunter__0_common__13122_survival_rotation_zhCN,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13321_add_debuff_zhCN,
+    ]
 
 
 # ==============================================================================
