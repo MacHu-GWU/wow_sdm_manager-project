@@ -22,11 +22,11 @@ SdmMapping = wow_sdm.exp03_wotlk.SdmMapping
 
 dir_here = Path.dir_here(__file__)
 # Test dir
-dir_game_client = dir_here.joinpath("tmp", "world_of_warcraft_zhTW")
+# dir_game_client = dir_here.joinpath("tmp", "world_of_warcraft_zhTW")
 # Real dir
-# dir_game_client = Path(
-#     r"C:\Users\husan\Documents\Games\WoW-Root\Client\World-of-Warcraft-3.3.5-zhTW"
-# )
+dir_game_client = Path(
+    r"C:\Users\husan\Documents\Games\WoW-Root\Client\World-of-Warcraft-3.3.5-zhTW"
+)
 
 client = Client(
     locale="zhTW",
