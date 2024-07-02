@@ -115,6 +115,7 @@ class MacroGroupEnum:
         MacroEnum.f_09_mage__1_arcane_fire__18312_act2_zhTW,
         MacroEnum.f_09_mage__0_common__18105_act3_zhTW,
         MacroEnum.f_09_mage__1_arcane_fire__18319_rotation_zhTW,
+        MacroEnum.f_09_mage__1_arcane_fire__18321_burst_zhTW,
         MacroEnum.f_09_mage__1_arcane_fire__18322_add_debuff_zhTW,
     ]
     mage_arcane_fire = OrderedSet(mage_arcane_fire)
