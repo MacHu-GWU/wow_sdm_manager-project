@@ -1,0 +1,33 @@
+admin:
+  AzerothCore:
+    - admin
+fat01:
+  AzerothCore:
+    - ra
+fat02:
+  AzerothCore:
+    - rb
+fat03:
+  AzerothCore:
+    - rc
+fat04:
+  AzerothCore:
+    - rd
+fat05:
+  AzerothCore:
+    - re
+fat06:
+  AzerothCore:
+    - rf
+fat07:
+  AzerothCore:
+    - rg
+fat08:
+  AzerothCore:
+    - rh
+fat09:
+  AzerothCore:
+    - ri
+fat10:
+  AzerothCore:
+    - rj
