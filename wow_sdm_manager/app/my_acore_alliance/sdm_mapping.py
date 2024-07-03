@@ -48,17 +48,24 @@ acc_macros = AccMap.make_many(AccGrpEnum.all_accounts, MacroGroupEnum.acc_common
 # ------------------------------------------------------------------------------
 char_macros = concat_lists(
     CharMap.make_many(
-        CharGrpEnum.paladin_protect_retri, MacroGroupEnum.paladin_protect_retri
+        CharGrpEnum.paladin_protect_retri,
+        MacroGroupEnum.paladin_protect_retri,
     ),
     CharMap.make_many(
-        CharGrpEnum.shaman_elemental_resto, MacroGroupEnum.shaman_elemental_resto
+        CharGrpEnum.shaman_elemental_resto,
+        MacroGroupEnum.shaman_elemental_resto,
     ),
     CharMap.make_many(
-        CharGrpEnum.druid_balance_resto, MacroGroupEnum.druid_balance_resto
+        CharGrpEnum.druid_feral_balance,
+        MacroGroupEnum.druid_feral_balance,
     ),
-    CharMap.make_many(CharGrpEnum.mage_arcane_fire, MacroGroupEnum.mage_arcane_fire),
     CharMap.make_many(
-        CharGrpEnum.priest_shadow_disco, MacroGroupEnum.priest_shadow_disco
+        CharGrpEnum.mage_arcane_fire,
+        MacroGroupEnum.mage_arcane_fire,
+    ),
+    CharMap.make_many(
+        CharGrpEnum.priest_shadow_disco,
+        MacroGroupEnum.priest_shadow_disco,
     ),
     CharMap.make_many(
         CharGrpEnum.warlock_demonology_affiliation,
@@ -69,10 +76,16 @@ char_macros = concat_lists(
         MacroGroupEnum.hunter_marksmanship_survival,
     ),
     CharMap.make_many(
-        CharGrpEnum.paladin_holy_protect, MacroGroupEnum.paladin_holy_protect
+        CharGrpEnum.druid_balance_resto,
+        MacroGroupEnum.druid_balance_resto,
     ),
     CharMap.make_many(
-        CharGrpEnum.dk_blood_tank_unholy_dps, MacroGroupEnum.dk_blood_tank_unholy_dps
+        CharGrpEnum.paladin_holy_protect,
+        MacroGroupEnum.paladin_holy_protect,
+    ),
+    CharMap.make_many(
+        CharGrpEnum.dk_blood_tank_unholy_dps,
+        MacroGroupEnum.dk_blood_tank_unholy_dps,
     ),
 )
 

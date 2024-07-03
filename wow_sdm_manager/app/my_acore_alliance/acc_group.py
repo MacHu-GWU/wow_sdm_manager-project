@@ -29,9 +29,8 @@ class CharacterGroupEnum:
         CharacterEnum.fat02_AzerothCore_rb,
     ]
 
-    druid_balance_resto = [
+    druid_feral_balance = [
         CharacterEnum.fat03_AzerothCore_rc,
-        CharacterEnum.fat08_AzerothCore_rh,
     ]
 
     mage_arcane_fire = [
@@ -48,6 +47,10 @@ class CharacterGroupEnum:
 
     hunter_marksmanship_survival = [
         CharacterEnum.fat07_AzerothCore_rg,
+    ]
+
+    druid_balance_resto = [
+        CharacterEnum.fat08_AzerothCore_rh,
     ]
 
     paladin_holy_protect = [
