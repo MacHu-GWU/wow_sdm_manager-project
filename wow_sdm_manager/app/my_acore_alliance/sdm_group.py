@@ -43,12 +43,12 @@ class MacroGroupEnum:
         MacroEnum.f_00_common__1109_set_low_fps,
         MacroEnum.f_00_common__1110_follow_focus,
         # Target specific character
-        MacroEnum.f_00_common__1131_target_window_01_acore_alliance_r_1_to_25_team,
-        MacroEnum.f_00_common__1132_target_window_10_acore_alliance_r_1_to_25_team,
+        MacroEnum.f_00_common__1131_target_window_acore_alliance_r_1_to_25_team,
+        MacroEnum.f_00_common__1132_target_window_acore_alliance_r_1_to_25_team,
         # Party and Raid
-        MacroEnum.f_00_common__1151_invite_raid,
+        MacroEnum.f_00_common__1151_invite_raid_acore_alliance_r_1_to_25_team,
         MacroEnum.f_00_common__1152_leave_raid,
-        MacroEnum.f_00_common__1153_summon,
+        MacroEnum.f_00_common__1153_summon_acore_alliance_r_1_to_25_team,
         # Teleport
         MacroEnum.f_00_common__1171_tele_darnassus,
         MacroEnum.f_00_common__1172_tele_ironforge,
