@@ -9,4 +9,4 @@ description: |
 
 text: |
   #showtooltip
-  /cast [nochanneling,mod:alt] 噬靈瘟疫; [nochanneling] 精神鞭笞
+  /cast [spec:1,nochanneling,mod:alt] 噬靈瘟疫; [nochanneling] 精神鞭笞

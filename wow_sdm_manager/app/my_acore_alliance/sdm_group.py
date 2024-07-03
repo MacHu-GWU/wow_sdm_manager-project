@@ -120,18 +120,21 @@ class MacroGroupEnum:
     ]
     mage_arcane_fire = OrderedSet(mage_arcane_fire)
 
-    priest_shadow_disco = [
+    priest_holy_shadow = [
         # Buff
         MacroEnum.f_00_common__2002_buff_caster_dps,
+        MacroEnum.f_00_common__2004_buff_healer,
         MacroEnum.f_10_priest__0_common__19101_consumable,
-        MacroEnum.f_10_priest__1_shadow_disco__19301_buff_self_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19701_buff_self_zhTW,
         MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
         # Act
-        MacroEnum.f_10_priest__1_shadow_disco__19302_act1_zhTW,
-        MacroEnum.f_10_priest__1_shadow_disco__19303_act2_zhTW,
-        MacroEnum.f_10_priest__1_shadow_disco__19306_multibox_main_rotate_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19702_act1_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19703_act2_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19706_multibox_holy_slow_heal_shadow_main_rotate_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19707_multibox_holy_slow_heal_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19708_multibox_holy_aoe_heal_zhTW,
     ]
-    priest_shadow_disco = OrderedSet(priest_shadow_disco)
+    priest_holy_shadow = OrderedSet(priest_holy_shadow)
 
     warlock_demonology_affiliation = [
         # Buff
@@ -217,6 +220,19 @@ class MacroGroupEnum:
         MacroEnum.f_03_dk__0_common__12132_tank_survival_rotation_zhTW,
     ]
     dk_blood_tank_unholy_dps = OrderedSet(dk_blood_tank_unholy_dps)
+
+    priest_shadow_disco = [
+        # Buff
+        MacroEnum.f_00_common__2002_buff_caster_dps,
+        MacroEnum.f_10_priest__0_common__19101_consumable,
+        MacroEnum.f_10_priest__1_shadow_disco__19301_buff_self_zhTW,
+        MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
+        # Act
+        MacroEnum.f_10_priest__1_shadow_disco__19302_act1_zhTW,
+        MacroEnum.f_10_priest__1_shadow_disco__19303_act2_zhTW,
+        MacroEnum.f_10_priest__1_shadow_disco__19306_multibox_main_rotate_zhTW,
+    ]
+    priest_shadow_disco = OrderedSet(priest_shadow_disco)
 
 
 # ==============================================================================

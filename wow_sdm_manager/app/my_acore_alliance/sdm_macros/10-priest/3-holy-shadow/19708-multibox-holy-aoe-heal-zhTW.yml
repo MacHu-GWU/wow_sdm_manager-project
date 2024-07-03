@@ -1,0 +1,16 @@
+
+name: MB-AOE-Heal
+character:
+  name:
+  realm:
+type: b
+id: 19708
+icon:
+description: |
+  只在多开模式下使用
+  
+  - 神牧: 施放 AOE 治疗技能
+  - 暗牧:
+text: |
+  #showtooltip
+  /castsequence [spec:1] reset=15 治療之環,治療禱言,治療禱言,治療禱言

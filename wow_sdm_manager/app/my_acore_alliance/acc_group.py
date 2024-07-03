@@ -37,7 +37,7 @@ class CharacterGroupEnum:
         CharacterEnum.fat04_AzerothCore_rd,
     ]
 
-    priest_shadow_disco = [
+    priest_holy_shadow = [
         CharacterEnum.fat05_AzerothCore_re,
     ]
 
@@ -61,6 +61,9 @@ class CharacterGroupEnum:
         CharacterEnum.fat10_AzerothCore_rj,
     ]
 
+    # priest_shadow_disco = [
+    #     CharacterEnum.fat05_AzerothCore_re,
+    # ]
 
 # ==============================================================================
 # END of manual editing

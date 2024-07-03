@@ -1,0 +1,16 @@
+
+name: MB-Slow-Heal
+character:
+  name:
+  realm:
+type: b
+id: 19707
+icon:
+description: |
+  只在多开模式下使用
+  
+  - 神牧: 对坦克施放小治疗
+  - 暗牧:
+text: |
+  #showtooltip
+  /castsequence [spec:1] reset=15 恢復,真言術:盾,癒合禱言,快速治療,快速治療,快速治療,,,

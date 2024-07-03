@@ -64,8 +64,8 @@ char_macros = concat_lists(
         MacroGroupEnum.mage_arcane_fire,
     ),
     CharMap.make_many(
-        CharGrpEnum.priest_shadow_disco,
-        MacroGroupEnum.priest_shadow_disco,
+        CharGrpEnum.priest_holy_shadow,
+        MacroGroupEnum.priest_holy_shadow,
     ),
     CharMap.make_many(
         CharGrpEnum.warlock_demonology_affiliation,

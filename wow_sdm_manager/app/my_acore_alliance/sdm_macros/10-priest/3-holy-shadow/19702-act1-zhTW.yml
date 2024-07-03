@@ -3,10 +3,10 @@ character:
   name:
   realm:
 type: b
-id: 19302
+id: 19702
 icon:
 description: |
 
 text: |
   #showtooltip
-  /cast [spec:1,mod:alt] 暗言術:死; 暗言術:痛
+  /cast [spec:2,mod:alt] 暗言術:死; 暗言術:痛
