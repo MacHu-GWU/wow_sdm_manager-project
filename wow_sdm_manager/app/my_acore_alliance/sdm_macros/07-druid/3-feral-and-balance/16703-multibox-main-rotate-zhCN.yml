@@ -9,7 +9,7 @@ description: |
   作为平衡德, 变形后, 使用输出循环;
 text: |
   #showtooltip
-  #/cast [spec:1,stance:0/1/2/4/5] 巨熊形態
+  #/cast [spec:1,stance:0/2/3/4/5] 巨熊形態
   #/castsequence [spec:1] reset=15
   /cast [spec:1,stance:0/1/2/4/5] 獵豹形態
   /castsequence [spec:1] reset=15 

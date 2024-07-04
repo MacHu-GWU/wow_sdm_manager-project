@@ -1,0 +1,13 @@
+name: Bear-And-Stun
+character:
+  name:
+  realm:
+type: b
+id: 16102
+icon:
+description: |
+  变熊并锤击晕人
+text: |
+  #showtooltip
+  /cast [stance:0/2/3/4/5] 巨熊形態
+  /cast 重擊

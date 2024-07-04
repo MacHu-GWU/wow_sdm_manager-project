@@ -10,6 +10,13 @@ from ...vendor.importer import wow_sdm
 from .sdm_enum import MacroEnum
 
 
+druid_common = [
+    MacroEnum.f_07_druid__0_common__16101_consumable,
+    MacroEnum.f_07_druid__0_common__16102_bear_and_stun_zhTW,
+    MacroEnum.f_07_druid__0_common__16103_cat_and_dash_zhTW,
+    MacroEnum.f_07_druid__0_common__16104_cat_and_prowl_zhTW,
+]
+
 # ==============================================================================
 # START of manual editing
 # ==============================================================================
@@ -91,11 +98,11 @@ class MacroGroupEnum:
     shaman_elemental_resto = OrderedSet(shaman_elemental_resto)
 
     druid_feral_balance = [
+        *druid_common,
         # Buff
         MacroEnum.f_00_common__2001_buff_physics_dps,
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_00_common__2003_buff_tank,
-        MacroEnum.f_07_druid__0_common__16101_consumable,
         MacroEnum.f_07_druid__3_feral_and_balance__16701_buff_self_bear_zhTW,
         MacroEnum.f_07_druid__3_feral_and_balance__16702_buff_raid_bear_zhTW,
         # Act
@@ -173,9 +180,9 @@ class MacroGroupEnum:
     hunter_marksmanship_survival = OrderedSet(hunter_marksmanship_survival)
 
     druid_balance_resto = [
+        *druid_common,
         # Buff
         MacroEnum.f_00_common__2002_buff_caster_dps,
-        MacroEnum.f_07_druid__0_common__16101_consumable,
         MacroEnum.f_07_druid__1_balance_resto__16301_buff_self_zhTW,
         MacroEnum.f_07_druid__1_balance_resto__16302_buff_raid_zhTW,
         # Act

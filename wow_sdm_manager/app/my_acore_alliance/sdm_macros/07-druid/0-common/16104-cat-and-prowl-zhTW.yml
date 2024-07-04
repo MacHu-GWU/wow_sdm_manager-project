@@ -1,0 +1,13 @@
+name: Cat-and-Prowl
+character:
+  name:
+  realm:
+type: b
+id: 16104
+icon:
+description: |
+  变猫并潜行
+text: |
+  #showtooltip
+  /cast [stance:0/1/2/4/5] 獵豹形態
+  /cast 潛行
