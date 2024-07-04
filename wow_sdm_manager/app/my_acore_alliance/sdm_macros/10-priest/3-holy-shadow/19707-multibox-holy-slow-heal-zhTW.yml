@@ -13,4 +13,4 @@ description: |
   - 暗牧:
 text: |
   #showtooltip
-  /castsequence [spec:1] reset=15 恢復,真言術:盾,癒合禱言,快速治療,快速治療,快速治療,,,
+  /castsequence [spec:1,nochanneling] reset=15 恢復,真言術:盾,癒合禱言,快速治療,快速治療,快速治療,,,

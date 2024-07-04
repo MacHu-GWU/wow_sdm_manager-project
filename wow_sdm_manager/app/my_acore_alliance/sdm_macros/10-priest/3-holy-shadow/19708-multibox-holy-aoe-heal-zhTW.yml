@@ -13,4 +13,4 @@ description: |
   - 暗牧:
 text: |
   #showtooltip
-  /castsequence [spec:1] reset=15 治療之環,治療禱言,治療禱言,治療禱言
+  /castsequence [spec:1,nochanneling] reset=15 治療之環,治療禱言,治療禱言,治療禱言
