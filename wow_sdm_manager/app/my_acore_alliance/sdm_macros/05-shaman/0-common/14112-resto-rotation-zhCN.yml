@@ -22,7 +22,7 @@ description: |
   
   #showtooltip
   #/targetraid
-  /castsequence reset=6 激流,治疗链,水之护盾,治疗波,次级治疗波,水之盾
+  /castsequence reset=6 激流,治疗链,水之护盾,治疗波,次级治疗波,水之护盾
 
 text: |
   #showtooltip
