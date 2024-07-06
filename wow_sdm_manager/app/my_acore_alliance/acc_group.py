@@ -5,6 +5,7 @@ This module can help you organize your enum into group, made it easier to
 construct mappings later.
 """
 
+from ordered_set import OrderedSet
 from ...vendor.importer import wow_sdm
 from .acc_enum import AccountEnum, CharacterEnum
 
@@ -16,6 +17,20 @@ get_values = wow_sdm.get_values
 # ==============================================================================
 class AccountGroupEnum:
     all_accounts = get_values(AccountEnum)
+
+    alliance_r_1_to_10 = [
+        AccountEnum.fat01,
+        AccountEnum.fat02,
+        AccountEnum.fat03,
+        AccountEnum.fat04,
+        AccountEnum.fat05,
+        AccountEnum.fat06,
+        AccountEnum.fat07,
+        AccountEnum.fat08,
+        AccountEnum.fat09,
+        AccountEnum.fat10,
+    ]
+    alliance_r_1_to_10 = OrderedSet(alliance_r_1_to_10)
 
 
 class CharacterGroupEnum:

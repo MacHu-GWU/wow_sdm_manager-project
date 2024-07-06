@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import sys
 from pathlib_mate import Path
 from ...vendor.importer import wow_sdm
 from .acc_enum import (
@@ -12,6 +13,7 @@ from .acc_group import (
 )
 from .sdm_enum import MacroEnum
 from .sdm_group import MacroGroupEnum
+from .sdm_mb_special import make_mb_special
 
 get_values = wow_sdm.get_values
 concat_lists = wow_sdm.concat_lists
@@ -22,11 +24,17 @@ SdmMapping = wow_sdm.exp03_wotlk.SdmMapping
 
 dir_here = Path.dir_here(__file__)
 # Test dir
-# dir_game_client = dir_here.joinpath("tmp", "world_of_warcraft_zhTW")
+dir_game_client_for_test = dir_here.joinpath("tmp", "world_of_warcraft_zhTW")
 # Real dir
-dir_game_client = Path(
+dir_game_client_for_windows = Path(
     r"C:\Users\husan\Documents\Games\WoW-Root\Client\World-of-Warcraft-3.3.5-zhTW"
 )
+IS_MAC = sys.platform == "darwin"
+if IS_MAC:
+    dir_game_client = dir_game_client_for_test
+else:
+    dir_game_client = dir_game_client_for_windows
+    # dir_game_client = dir_game_client_for_test
 
 client = Client(
     locale="zhTW",
@@ -43,10 +51,7 @@ all_characters = CharGrpEnum.all_characters
 # ------------------------------------------------------------------------------
 acc_macros = concat_lists(
     AccMap.make_many(AccGrpEnum.all_accounts, MacroGroupEnum.acc_common),
-    # --------------------------------------------------------------------------
-    # MB Special
-    # --------------------------------------------------------------------------
-    AccMap.make_many(AccGrpEnum.all_accounts, MacroGroupEnum.acc_common_mb_special),
+    make_mb_special(),
 )
 
 # ------------------------------------------------------------------------------
