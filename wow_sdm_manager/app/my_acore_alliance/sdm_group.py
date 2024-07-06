@@ -64,6 +64,13 @@ class MacroGroupEnum:
     ]
     acc_common = OrderedSet(acc_common)
 
+    acc_common_mb_special = [
+        MacroEnum.f_00_common__6001_mb_special1,
+        MacroEnum.f_00_common__6002_mb_special2,
+        MacroEnum.f_00_common__6003_mb_special3,
+    ]
+    acc_common_mb_special = OrderedSet(acc_common_mb_special)
+
     paladin_protect_retri = [
         # Buff
         MacroEnum.f_00_common__2003_buff_tank,

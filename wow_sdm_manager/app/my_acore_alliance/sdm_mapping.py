@@ -41,7 +41,13 @@ all_characters = CharGrpEnum.all_characters
 # ------------------------------------------------------------------------------
 # acc_macros
 # ------------------------------------------------------------------------------
-acc_macros = AccMap.make_many(AccGrpEnum.all_accounts, MacroGroupEnum.acc_common)
+acc_macros = concat_lists(
+    AccMap.make_many(AccGrpEnum.all_accounts, MacroGroupEnum.acc_common),
+    # --------------------------------------------------------------------------
+    # MB Special
+    # --------------------------------------------------------------------------
+    AccMap.make_many(AccGrpEnum.all_accounts, MacroGroupEnum.acc_common_mb_special),
+)
 
 # ------------------------------------------------------------------------------
 # char_macros
