@@ -1,0 +1,12 @@
+name: MB-Special1
+character:
+  name:
+  realm:
+type: b
+id: 6001
+icon:
+description: |
+  在跟 ICC Boss 1 号的战斗中, 选择骸骨尖刺攻击
+text: |
+  #showtooltip
+  /target 骸骨尖刺
