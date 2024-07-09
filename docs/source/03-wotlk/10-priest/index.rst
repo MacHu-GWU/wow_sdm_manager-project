@@ -6,6 +6,33 @@ Common
 ------------------------------------------------------------------------------
 
 
+刷团队 Buff
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+一键给团队上团队 Buff. 按顺序上群体耐, 群体精神, 群体暗抗. 接下来的 3 个盾会在第一个盾卡住. 这是有意为之, 使得如果你不断按这个宏的情况下, 大约在 20 秒之内只会生效一次 (刷前三个技能 5 秒, 盾会卡住 15 秒). 这样可以配合骑士给全团刷祝福的周期 (大约也是不到 20 秒)
+
+.. admonition:: 刷团队 Buff
+
+    **zhTW**
+
+    .. code-block:: python
+
+        #showtooltip
+        /target player
+        /castsequence [nochanneling] reset=target 堅韌禱言,精神禱言,暗影防護禱言,真言術:盾,真言術:盾,真言術:盾
+
+    **zhCN**
+
+    .. code-block:: python
+
+        #showtooltip
+
+    **enUS**
+
+    .. code-block:: python
+
+        #showtooltip
+
+
 Shadow
 ------------------------------------------------------------------------------
 
@@ -62,6 +89,85 @@ Shadow
         #showtooltip
 
 
+暗牧 Buff 自己
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+暗牧给自己依次上暗影形态, 吸血鬼的拥抱, 心灵之火, 进入战斗状态.
+
+.. admonition:: 暗牧 Buff 自己
+
+    **zhTW**
+
+    .. code-block:: python
+
+        #showtooltip
+        /cast [nostance] 暗影形態
+        /castsequence reset=target 吸血鬼的擁抱, 心靈之火
+
+    **zhCN**
+
+    .. code-block:: python
+
+        #showtooltip
+
+    **enUS**
+
+    .. code-block:: python
+
+        #showtooltip
+
+
+暗牧 Act 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+按 1 上痛, 按 Alt 1 丢灭.
+
+.. admonition:: 暗牧 Act 1
+
+    **zhTW**
+
+    .. code-block:: python
+
+        #showtooltip
+        /cast [mod:alt] 暗言術:死; 暗言術:痛
+
+    **zhCN**
+
+    .. code-block:: python
+
+        #showtooltip
+
+    **enUS**
+
+    .. code-block:: python
+
+        #showtooltip
+
+
+暗牧 Act 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+按 2 精神鞭笞, 按 Alt 2 噬灵瘟疫.
+
+.. admonition:: 暗牧 Act 2
+
+    **zhTW**
+
+    .. code-block:: python
+
+        #showtooltip
+        /cast [nochanneling,mod:alt] 噬靈瘟疫; [nochanneling] 精神鞭笞
+
+    **zhCN**
+
+    .. code-block:: python
+
+        #showtooltip
+
+    **enUS**
+
+    .. code-block:: python
+
+        #showtooltip
+
+
 Disc
 ------------------------------------------------------------------------------
 
@@ -72,7 +178,7 @@ Disc
 
 注意一定要加入 ``[nochanneling]`` 来防止在施放重要的引导技能的过程中被打断.
 
-.. admonition:: 随机选择团队成员套盾 (不会选中自己)
+.. admonition:: 戒律牧全团套盾一键宏
 
     **zhTW**
 
@@ -81,6 +187,34 @@ Disc
         #showtooltip
         /targetraid
         /cast [nochanneling] 真言術:盾
+
+    **zhCN**
+
+    .. code-block:: python
+
+        #showtooltip
+
+    **enUS**
+
+    .. code-block:: python
+
+        #showtooltip
+
+
+MB 戒律牧刷坦克的血一键宏
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+在多开的时候戒律牧给掉血了但是血量不危机的坦克刷血. 一般是先上愈合祷言, 然后丢苦修, 然后快速治疗. 之所以不丢盾是因为可能目标身上已经有盾了, 会导致整个技能循环卡住放不出去技能.
+
+注意一定要加入 ``[nochanneling]`` 来防止在施放重要的引导技能的过程中被打断.
+
+.. admonition:: MB 戒律牧刷坦克的血一键宏
+
+    **zhTW**
+
+    .. code-block:: python
+
+        #showtooltip
+        /castsequence [nochanneling] reset=10 癒合禱言,,懺悟,,快速治療,,快速治療,,快速治療,,
 
     **zhCN**
 
@@ -105,7 +239,7 @@ Holy
 
 注意一定要加入 ``[nochanneling]`` 来防止在施放重要的引导技能的过程中被打断.
 
-.. admonition:: 随机选择团队成员套盾 (不会选中自己)
+.. admonition:: 神圣牧全团丢恢复一键宏
 
     **zhTW**
 
@@ -114,6 +248,34 @@ Holy
         #showtooltip
         /targetraid
         /castsequence [nochanneling] 恢復,恢復,恢復,恢復,恢復,治療之環
+
+    **zhCN**
+
+    .. code-block:: python
+
+        #showtooltip
+
+    **enUS**
+
+    .. code-block:: python
+
+        #showtooltip
+
+
+MB 神圣牧刷坦克的血一键宏
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+在多开的时候神圣牧给掉血了但是血量不危机的坦克刷血. 一般是先上愈合祷言, 然后丢恢复, 然后丢快速治疗. 之所以不丢盾是因为可能目标身上已经有盾了, 会导致整个技能循环卡住放不出去技能.
+
+注意一定要加入 ``[nochanneling]`` 来防止在施放重要的引导技能的过程中被打断.
+
+.. admonition:: MB 神圣牧刷坦克的血一键宏
+
+    **zhTW**
+
+    .. code-block:: python
+
+        #showtooltip
+        /castsequence [nochanneling] reset=10 癒合禱言,,恢復,,快速治療,,快速治療,,快速治療,,
 
     **zhCN**
 
