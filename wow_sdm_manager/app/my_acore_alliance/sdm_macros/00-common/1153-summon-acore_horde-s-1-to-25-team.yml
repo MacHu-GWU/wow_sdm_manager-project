@@ -1,0 +1,35 @@
+name: Summon
+character:
+  name:
+  realm:
+type: b
+id: 1153
+icon: 1068
+description: |
+  GM 命令, 召唤你指定的人到你的位置. 这里的角色是我在 acore 服务器的部落方的所有角色.
+text: |
+  .summon sa
+  .summon sb
+  .summon sc
+  .summon sd
+  .summon se
+  .summon sf
+  .summon sg
+  .summon sh
+  .summon si
+  .summon sj
+  .summon sk
+  .summon sl
+  .summon sm
+  .summon sn
+  .summon so
+  .summon sp
+  .summon sq
+  .summon sr
+  .summon ss
+  .summon st
+  .summon su
+  .summon sv
+  .summon sw
+  .summon sx
+  .summon sy
