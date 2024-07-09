@@ -6,7 +6,7 @@ type: b
 id: 1153
 icon: 1068
 description: |
-  GM 命令, 召唤你指定的人到你的位置
+  GM 命令, 召唤你指定的人到你的位置. 这里的角色是我在 acore 服务器的联盟方的所有角色.
 text: |
   .summon ra
   .summon rb
