@@ -32,6 +32,35 @@ class AccountGroupEnum:
     ]
     alliance_r_1_to_10 = OrderedSet(alliance_r_1_to_10)
 
+    alliance_r_1_to_25 = [
+        AccountEnum.fat01,
+        AccountEnum.fat02,
+        AccountEnum.fat03,
+        AccountEnum.fat04,
+        AccountEnum.fat05,
+        AccountEnum.fat06,
+        AccountEnum.fat07,
+        AccountEnum.fat08,
+        AccountEnum.fat09,
+        AccountEnum.fat10,
+        AccountEnum.fat11,
+        AccountEnum.fat12,
+        AccountEnum.fat13,
+        AccountEnum.fat14,
+        AccountEnum.fat15,
+        AccountEnum.fat16,
+        AccountEnum.fat17,
+        AccountEnum.fat18,
+        AccountEnum.fat19,
+        AccountEnum.fat20,
+        AccountEnum.fat21,
+        AccountEnum.fat22,
+        AccountEnum.fat23,
+        AccountEnum.fat24,
+        AccountEnum.fat25,
+    ]
+    alliance_r_1_to_25 = OrderedSet(alliance_r_1_to_25)
+
 
 class CharacterGroupEnum:
     all_characters = get_values(CharacterEnum)
@@ -76,9 +105,29 @@ class CharacterGroupEnum:
         CharacterEnum.fat10_AzerothCore_rj,
     ]
 
-    # priest_shadow_disco = [
-    #     CharacterEnum.fat05_AzerothCore_re,
-    # ]
+    priest_shadow_disc = [
+        CharacterEnum.fat14_AzerothCore_rn,
+        CharacterEnum.fat15_AzerothCore_ro,
+        CharacterEnum.fat16_AzerothCore_rp,
+        CharacterEnum.fat17_AzerothCore_rq,
+        CharacterEnum.fat18_AzerothCore_rr,
+        CharacterEnum.fat19_AzerothCore_rs,
+        CharacterEnum.fat20_AzerothCore_rt,
+        CharacterEnum.fat21_AzerothCore_ru,
+        CharacterEnum.fat22_AzerothCore_rv,
+    ]
+
+    priest_disc_holy = [
+        CharacterEnum.fat25_AzerothCore_ry,
+        CharacterEnum.fat15_AzerothCore_ro,
+        CharacterEnum.fat16_AzerothCore_rp,
+        CharacterEnum.fat17_AzerothCore_rq,
+        CharacterEnum.fat18_AzerothCore_rr,
+        CharacterEnum.fat19_AzerothCore_rs,
+        CharacterEnum.fat20_AzerothCore_rt,
+        CharacterEnum.fat21_AzerothCore_ru,
+        CharacterEnum.fat22_AzerothCore_rv,
+    ]
 
 # ==============================================================================
 # END of manual editing

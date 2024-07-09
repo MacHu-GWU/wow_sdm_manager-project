@@ -17,6 +17,7 @@ druid_common = [
     MacroEnum.f_07_druid__0_common__16104_cat_and_prowl_zhTW,
 ]
 
+
 # ==============================================================================
 # START of manual editing
 # ==============================================================================
@@ -134,22 +135,6 @@ class MacroGroupEnum:
     ]
     mage_arcane_fire = OrderedSet(mage_arcane_fire)
 
-    priest_holy_shadow = [
-        # Buff
-        MacroEnum.f_00_common__2002_buff_caster_dps,
-        MacroEnum.f_00_common__2004_buff_healer,
-        MacroEnum.f_10_priest__0_common__19101_consumable,
-        MacroEnum.f_10_priest__3_holy_shadow__19701_buff_self_zhTW,
-        MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
-        # Act
-        MacroEnum.f_10_priest__3_holy_shadow__19702_act1_zhTW,
-        MacroEnum.f_10_priest__3_holy_shadow__19703_act2_zhTW,
-        MacroEnum.f_10_priest__3_holy_shadow__19706_multibox_holy_slow_heal_shadow_main_rotate_zhTW,
-        MacroEnum.f_10_priest__3_holy_shadow__19707_multibox_holy_slow_heal_zhTW,
-        MacroEnum.f_10_priest__3_holy_shadow__19708_multibox_holy_aoe_heal_zhTW,
-    ]
-    priest_holy_shadow = OrderedSet(priest_holy_shadow)
-
     warlock_demonology_affiliation = [
         # Buff
         MacroEnum.f_00_common__2002_buff_caster_dps,
@@ -235,18 +220,47 @@ class MacroGroupEnum:
     ]
     dk_blood_tank_unholy_dps = OrderedSet(dk_blood_tank_unholy_dps)
 
-    priest_shadow_disco = [
+    priest_shadow_disc = [
         # Buff
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_10_priest__0_common__19101_consumable,
-        MacroEnum.f_10_priest__1_shadow_disco__19301_buff_self_zhTW,
         MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
+        MacroEnum.f_10_priest__1_shadow_disc__19301_buff_self_zhTW,
         # Act
-        MacroEnum.f_10_priest__1_shadow_disco__19302_act1_zhTW,
-        MacroEnum.f_10_priest__1_shadow_disco__19303_act2_zhTW,
-        MacroEnum.f_10_priest__1_shadow_disco__19306_multibox_main_rotate_zhTW,
+        MacroEnum.f_10_priest__1_shadow_disc__19302_act1_zhTW,
+        MacroEnum.f_10_priest__1_shadow_disc__19303_act2_zhTW,
+        MacroEnum.f_10_priest__1_shadow_disc__19311_mb_main_rotate_zhTW,
+        MacroEnum.f_10_priest__1_shadow_disc__19312_mb_heal_tank_rotate_zhTW,
     ]
-    priest_shadow_disco = OrderedSet(priest_shadow_disco)
+    priest_shadow_disc = OrderedSet(priest_shadow_disc)
+
+    priest_disc_holy = [
+        # Buff
+        MacroEnum.f_00_common__2002_buff_caster_dps,
+        MacroEnum.f_00_common__2004_buff_healer,
+        MacroEnum.f_10_priest__0_common__19101_consumable,
+        MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
+        MacroEnum.f_10_priest__2_disc_holy__19501_buff_self_zhTW,
+        # Act
+        MacroEnum.f_10_priest__2_disc_holy__19511_mb_main_rotate_zhTW,
+        MacroEnum.f_10_priest__2_disc_holy__19512_mb_heal_tank_rotate_zhTW,
+    ]
+    priest_disc_holy = OrderedSet(priest_disc_holy)
+
+    priest_holy_shadow = [
+        # Buff
+        MacroEnum.f_00_common__2002_buff_caster_dps,
+        MacroEnum.f_00_common__2004_buff_healer,
+        MacroEnum.f_10_priest__0_common__19101_consumable,
+        MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19701_buff_self_zhTW,
+        # Act
+        MacroEnum.f_10_priest__3_holy_shadow__19702_act1_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19703_act2_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19711_mb_main_rotate_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19712_mb_heal_tank_rotate_zhTW,
+    ]
+    priest_holy_shadow = OrderedSet(priest_holy_shadow)
 
 
 # ==============================================================================

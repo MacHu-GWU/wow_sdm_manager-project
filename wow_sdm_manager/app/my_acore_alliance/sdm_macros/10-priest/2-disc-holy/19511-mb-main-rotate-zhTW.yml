@@ -1,0 +1,16 @@
+name: MB-Disc-Holy-Main-Rotate
+character:
+  name:
+  realm:
+type: b
+id: 19511
+icon:
+description: |
+  戒律牧在团队中的主要任务是全团套盾, 所以只要随机选择团队成员并给他们套盾即可.
+  
+  神牧在团队中的主要任务是全团丢恢复和群刷, 所以只要随机选择团队成员并给他们丢恢复并穿插治疗之环即可.
+text: |
+  #showtooltip
+  /targetraid
+  /cast [spec:1,nochanneling] 真言術:盾
+  /castsequence [spec:2,nochanneling] reset=6 恢復,恢復,恢復,恢復,恢復,治療之環

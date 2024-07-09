@@ -1,0 +1,12 @@
+name: MB-Heal-Tank-Rotate
+character:
+  name:
+  realm:
+type: b
+id: 19312
+icon:
+description: |
+  在多开的时候戒律牧给掉血了但是血量不危机的坦克刷血. 一般是先上愈合祷言, 然后丢苦修, 然后快速治疗. 之所以不丢盾是因为可能目标身上已经有盾了, 会导致整个技能循环卡住放不出去技能.
+text: |
+  #showtooltip
+  /castsequence [nochanneling] reset=10 癒合禱言,,懺悟,,快速治療,,快速治療,,快速治療,,
