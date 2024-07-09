@@ -1,4 +1,4 @@
-Sample RestructuredText Document
+Priest
 ==============================================================================
-
-This is a sample rst document.
+.. autotoctree::
+    :maxdepth: 1
