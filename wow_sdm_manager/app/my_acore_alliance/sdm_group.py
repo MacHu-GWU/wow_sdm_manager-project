@@ -129,8 +129,8 @@ class MacroGroupEnum:
         MacroEnum.f_08_warlock__0_common__17111_demonology_rotation_zhTW,
         MacroEnum.f_08_warlock__0_common__17112_affiliation_rotation_zhTW,
         MacroEnum.f_08_warlock__0_common__17114_spell_stone_zhTW,
-        MacroEnum.f_08_warlock__1_demonology_affiliation__17311_burst_zhTW,
-        MacroEnum.f_08_warlock__1_demonology_affiliation__17321_add_debuff_zhTW,
+        MacroEnum.f_08_warlock__1_demonology_affiliation__17301_burst_zhTW,
+        MacroEnum.f_08_warlock__1_demonology_affiliation__17302_add_debuff_zhTW,
     ]
     warlock_demonology_affiliation = OrderedSet(warlock_demonology_affiliation)
 
@@ -205,12 +205,12 @@ class MacroGroupEnum:
 
     mage_common = [
         MacroEnum.f_00_common__2002_buff_caster_dps,
-        MacroEnum.f_09_mage__0_common__18101_consumable,
-        MacroEnum.f_09_mage__0_common__18102_interrupt_zhTW,
-        MacroEnum.f_09_mage__0_common__18103_buff_self_zhTW,
-        MacroEnum.f_09_mage__0_common__18104_buff_team_zhTW,
-        MacroEnum.f_09_mage__0_common__18106_burst_zhTW,
-        MacroEnum.f_09_mage__0_common__18105_act3_zhTW,
+        MacroEnum.f_09_mage__0_common__18101_interrupt_zhTW,
+        MacroEnum.f_09_mage__0_common__18102_buff_self_zhTW,
+        MacroEnum.f_09_mage__0_common__18103_buff_team_zhTW,
+        MacroEnum.f_09_mage__0_common__18104_act3_zhTW,
+        MacroEnum.f_09_mage__0_common__18105_burst_zhTW,
+        MacroEnum.f_09_mage__0_common__18151_gm_consumable,
     ]
     mage_common = OrderedSet(mage_common)
 
@@ -218,21 +218,21 @@ class MacroGroupEnum:
         *mage_common,
         MacroEnum.f_09_mage__1_arcane_fire__18301_act1_zhTW,
         MacroEnum.f_09_mage__1_arcane_fire__18302_act2_zhTW,
-        MacroEnum.f_09_mage__1_arcane_fire__18303_act1_with_debuff_zhTW,
-        MacroEnum.f_09_mage__1_arcane_fire__18311_mb_main_rotation_zhTW,
+        MacroEnum.f_09_mage__1_arcane_fire__18331_mb_main_rotation_zhTW,
+        MacroEnum.f_09_mage__1_arcane_fire__18351_gm_act1_with_debuff_zhTW,
     ]
     mage_arcane_fire = OrderedSet(mage_arcane_fire)
 
     mage_fire_frost = [
         *mage_common,
-        MacroEnum.f_09_mage__2_fire_frost__18501_act1_with_debuff_zhTW,
+        MacroEnum.f_09_mage__2_fire_frost__18551_gm_act1_with_debuff_zhTW,
     ]
     mage_fire_frost = OrderedSet(mage_fire_frost)
 
     mage_frost_arcane = [
         *mage_common,
-        MacroEnum.f_09_mage__3_frost_arcane__18711_mb_main_rotation_zhTW,
-        MacroEnum.f_09_mage__3_frost_arcane__18701_act1_with_debuff_zhTW,
+        MacroEnum.f_09_mage__3_frost_arcane__18731_mb_main_rotation_zhTW,
+        MacroEnum.f_09_mage__3_frost_arcane__18751_gm_act1_with_debuff_zhTW,
     ]
     mage_frost_arcane = OrderedSet(mage_frost_arcane)
 

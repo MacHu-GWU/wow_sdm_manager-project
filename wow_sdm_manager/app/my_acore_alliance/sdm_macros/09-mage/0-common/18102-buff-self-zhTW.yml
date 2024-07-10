@@ -3,11 +3,11 @@ character:
   name:
   realm:
 type: b
-id: 18103
+id: 18102
 icon:
 description: |
   给自己上 Buff. 先给自己上熔火护甲, 然后给特定法系 DPS 上专注魔法. 这个 /target 的目标就是其他法系 DPS 的名字. 熔火护甲在目标是别人的情况下依然会自动给自己上.
 text: |
   #showtooltip
   /target rc
-  /castsequence reset=target 熔岩护甲,专注魔法
+  /castsequence reset=target 熔火護甲,魔法凝聚
