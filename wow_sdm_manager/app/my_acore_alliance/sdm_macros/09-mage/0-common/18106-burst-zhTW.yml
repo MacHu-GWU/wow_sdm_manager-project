@@ -1,0 +1,16 @@
+name: Burst
+character:
+  name:
+  realm:
+type: b
+id: 18106
+icon:
+description: |
+  法师的爆发技能除了幻象有 GCD, 冰脉, 奥强, 燃烧都没有 GCD, 可以一起开. 没有 GCD 的技能可以放在一个宏里, 不会出现上面的技能放不出来导致下面的技能也放不出来的情况. 例如就算你是火法, 没有冰脉技能, 你依然可以放出下面的燃烧技能.
+text: |
+  #showtooltip
+  /stopcasting
+  /cast 幻鏡之像
+  /cast 冰寒脈動
+  /cast 秘法強化
+  /cast 燃烧

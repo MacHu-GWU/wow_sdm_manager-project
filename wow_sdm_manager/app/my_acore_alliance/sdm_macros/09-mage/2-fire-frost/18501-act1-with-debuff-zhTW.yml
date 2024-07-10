@@ -1,0 +1,26 @@
+name: Act 1 Add Debuff
+character:
+  name:
+  realm:
+type: b
+id: 18501
+icon:
+description: |
+  法师的 1 号键位
+  给法师的中频输出循环技能添加给敌人上 Debuff 的功能. 只能用于单机 GM, 用来模拟团队 Debuff. 该技能放在 1 号键位上.
+  
+  .aura 54499 # 十字军之心 +3% 被暴击几率
+  .aura 47865 # 元素诅咒 +13% 受到的法术伤害, -165 所有抗性
+  .aura 22959 # 强化灼烧 +5% 被法术暴击的几率
+  .aura 33198 # 苦难 +3% 被法术命中的几率
+  .aura 31589 # 减速 移动速度 -60%, 远程攻击间隔 +60%, 施法速度 -30% (用于触发奥系 "折磨弱小" 天赋)
+text: |
+  #showtooltip
+  /cast [spec:1] 炎爆术
+  /cast [spec:2] 霜火箭 
+  /stopmacro [noharm]
+  .aura 54499
+  .aura 47865
+  .aura 22959
+  .aura 33198
+  .aura 31589

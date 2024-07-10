@@ -6,8 +6,8 @@ construct mappings later.
 """
 
 from ordered_set import OrderedSet
-from ...vendor.importer import wow_sdm
-from .sdm_enum import MacroEnum
+from wow_sdm_manager.vendor.importer import wow_sdm
+from wow_sdm_manager.app.my_acore_alliance.sdm_enum import MacroEnum
 
 
 druid_common = [
@@ -118,23 +118,6 @@ class MacroGroupEnum:
     ]
     druid_feral_balance = OrderedSet(druid_feral_balance)
 
-    mage_arcane_fire = [
-        # Buff
-        MacroEnum.f_00_common__2002_buff_caster_dps,
-        MacroEnum.f_09_mage__0_common__18101_consumable,
-        MacroEnum.f_09_mage__0_common__18102_interrupt_zhTW,
-        MacroEnum.f_09_mage__0_common__18103_buff_self_zhTW,
-        MacroEnum.f_09_mage__0_common__18104_buff_team_zhTW,
-        # Act
-        MacroEnum.f_09_mage__1_arcane_fire__18311_act1_zhTW,
-        MacroEnum.f_09_mage__1_arcane_fire__18312_act2_zhTW,
-        MacroEnum.f_09_mage__0_common__18105_act3_zhTW,
-        MacroEnum.f_09_mage__1_arcane_fire__18319_rotation_zhTW,
-        MacroEnum.f_09_mage__1_arcane_fire__18321_burst_zhTW,
-        MacroEnum.f_09_mage__1_arcane_fire__18322_add_debuff_zhTW,
-    ]
-    mage_arcane_fire = OrderedSet(mage_arcane_fire)
-
     warlock_demonology_affiliation = [
         # Buff
         MacroEnum.f_00_common__2002_buff_caster_dps,
@@ -220,13 +203,49 @@ class MacroGroupEnum:
     ]
     dk_blood_tank_unholy_dps = OrderedSet(dk_blood_tank_unholy_dps)
 
-    priest_shadow_disc = [
-        # Buff
+    mage_common = [
         MacroEnum.f_00_common__2002_buff_caster_dps,
+        MacroEnum.f_09_mage__0_common__18101_consumable,
+        MacroEnum.f_09_mage__0_common__18102_interrupt_zhTW,
+        MacroEnum.f_09_mage__0_common__18103_buff_self_zhTW,
+        MacroEnum.f_09_mage__0_common__18104_buff_team_zhTW,
+        MacroEnum.f_09_mage__0_common__18106_burst_zhTW,
+        MacroEnum.f_09_mage__0_common__18105_act3_zhTW,
+    ]
+    mage_common = OrderedSet(mage_common)
+
+    mage_arcane_fire = [
+        *mage_common,
+        MacroEnum.f_09_mage__1_arcane_fire__18301_act1_zhTW,
+        MacroEnum.f_09_mage__1_arcane_fire__18302_act2_zhTW,
+        MacroEnum.f_09_mage__1_arcane_fire__18303_act1_with_debuff_zhTW,
+        MacroEnum.f_09_mage__1_arcane_fire__18311_mb_main_rotation_zhTW,
+    ]
+    mage_arcane_fire = OrderedSet(mage_arcane_fire)
+
+    mage_fire_frost = [
+        *mage_common,
+        MacroEnum.f_09_mage__2_fire_frost__18501_act1_with_debuff_zhTW,
+    ]
+    mage_fire_frost = OrderedSet(mage_fire_frost)
+
+    mage_frost_arcane = [
+        *mage_common,
+        MacroEnum.f_09_mage__3_frost_arcane__18711_mb_main_rotation_zhTW,
+        MacroEnum.f_09_mage__3_frost_arcane__18701_act1_with_debuff_zhTW,
+    ]
+    mage_frost_arcane = OrderedSet(mage_frost_arcane)
+
+    priest_common = [
+        MacroEnum.f_00_common__2002_buff_caster_dps,
+        MacroEnum.f_00_common__2004_buff_healer,
         MacroEnum.f_10_priest__0_common__19101_consumable,
         MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
+    ]
+
+    priest_shadow_disc = [
+        *priest_common,
         MacroEnum.f_10_priest__1_shadow_disc__19301_buff_self_zhTW,
-        # Act
         MacroEnum.f_10_priest__1_shadow_disc__19302_act1_zhTW,
         MacroEnum.f_10_priest__1_shadow_disc__19303_act2_zhTW,
         MacroEnum.f_10_priest__1_shadow_disc__19311_mb_main_rotate_zhTW,
@@ -235,26 +254,16 @@ class MacroGroupEnum:
     priest_shadow_disc = OrderedSet(priest_shadow_disc)
 
     priest_disc_holy = [
-        # Buff
-        MacroEnum.f_00_common__2002_buff_caster_dps,
-        MacroEnum.f_00_common__2004_buff_healer,
-        MacroEnum.f_10_priest__0_common__19101_consumable,
-        MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
+        *priest_common,
         MacroEnum.f_10_priest__2_disc_holy__19501_buff_self_zhTW,
-        # Act
         MacroEnum.f_10_priest__2_disc_holy__19511_mb_main_rotate_zhTW,
         MacroEnum.f_10_priest__2_disc_holy__19512_mb_heal_tank_rotate_zhTW,
     ]
     priest_disc_holy = OrderedSet(priest_disc_holy)
 
     priest_holy_shadow = [
-        # Buff
-        MacroEnum.f_00_common__2002_buff_caster_dps,
-        MacroEnum.f_00_common__2004_buff_healer,
-        MacroEnum.f_10_priest__0_common__19101_consumable,
-        MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
+        *priest_common,
         MacroEnum.f_10_priest__3_holy_shadow__19701_buff_self_zhTW,
-        # Act
         MacroEnum.f_10_priest__3_holy_shadow__19702_act1_zhTW,
         MacroEnum.f_10_priest__3_holy_shadow__19703_act2_zhTW,
         MacroEnum.f_10_priest__3_holy_shadow__19711_mb_main_rotate_zhTW,
