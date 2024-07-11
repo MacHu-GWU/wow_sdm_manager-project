@@ -118,19 +118,20 @@ class MacroGroupEnum:
     ]
     druid_feral_balance = OrderedSet(druid_feral_balance)
 
-    warlock_demonology_affiliation = [
-        # Buff
+    warlock_common = [
         MacroEnum.f_00_common__2002_buff_caster_dps,
-        MacroEnum.f_08_warlock__0_common__17101_consumable,
-        # Act
+        MacroEnum.f_08_warlock__0_common__17101_corruption_zhTW,
         MacroEnum.f_08_warlock__0_common__17102_elemental_curse_zhTW,
         MacroEnum.f_08_warlock__0_common__17103_tongue_curse_zhTW,
-        MacroEnum.f_08_warlock__0_common__17104_corruption_zhTW,
-        MacroEnum.f_08_warlock__0_common__17111_demonology_rotation_zhTW,
-        MacroEnum.f_08_warlock__0_common__17112_affiliation_rotation_zhTW,
         MacroEnum.f_08_warlock__0_common__17114_spell_stone_zhTW,
+        MacroEnum.f_08_warlock__0_common__17115_fire_stone_zhTW,
+    ]
+    warlock_common = OrderedSet(warlock_common)
+
+    warlock_demonology_affiliation = [
+        *warlock_common,
         MacroEnum.f_08_warlock__1_demonology_affiliation__17301_burst_zhTW,
-        MacroEnum.f_08_warlock__1_demonology_affiliation__17302_add_debuff_zhTW,
+        MacroEnum.f_08_warlock__1_demonology_affiliation__17331_mb_main_rotate_zhTW,
     ]
     warlock_demonology_affiliation = OrderedSet(warlock_demonology_affiliation)
 

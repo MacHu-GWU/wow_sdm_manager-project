@@ -10,4 +10,4 @@ description: |
 text: |
   #showtooltip
   /castsequence [nochanneling] reset=10 獻祭,腐蝕術,暗影箭,生命分流,暗影箭,暗影箭,燒盡,燒盡,燒盡,腐蝕術,暗影箭,暗影箭,暗影箭,生命分流,燒盡,燒盡,燒盡,獻祭,腐蝕術,暗影箭,暗影箭,暗影箭,暗影箭,燒盡,燒盡,燒盡,腐蝕術,暗影箭,生命分流,暗影箭,暗影箭,燒盡,燒盡,燒盡
-  /cast 魔性活化
+  /cast [nochanneling] 魔性活化
