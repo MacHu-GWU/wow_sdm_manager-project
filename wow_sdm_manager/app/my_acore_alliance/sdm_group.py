@@ -81,24 +81,26 @@ class MacroGroupEnum:
     ]
     paladin_protect_retri = OrderedSet(paladin_protect_retri)
 
+    shaman_common = [
+        MacroEnum.f_05_shaman__0_common__14101_interrupt_zhTW,
+        MacroEnum.f_05_shaman__0_common__14131_mb_resto_periodic_earth_shield_zhTW,
+        MacroEnum.f_05_shaman__0_common__14151_gm_consumable,
+    ]
+    shaman_common = OrderedSet(shaman_common)
+
     shaman_elemental_resto = [
-        # Common
-        MacroEnum.f_05_shaman__0_common__14102_interrupt_zhTW,
+        *shaman_common,
         # Buff
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_00_common__2004_buff_healer,
-        MacroEnum.f_05_shaman__0_common__14101_consumable,
         MacroEnum.f_05_shaman__1_elemental_resto__14311_buff_self_zhTW,
-        # Act
-        MacroEnum.f_05_shaman__0_common__14111_elemental_rotation_zhTW,
-        MacroEnum.f_05_shaman__0_common__14112_resto_rotation_zhTW,
-        MacroEnum.f_05_shaman__0_common__14114_mb_resto_earth_shield_zhTW,
         MacroEnum.f_05_shaman__1_elemental_resto__14312_burst_zhTW,
+        MacroEnum.f_05_shaman__1_elemental_resto__14331_mb_main_rotation_zhTW,
     ]
     shaman_elemental_resto = OrderedSet(shaman_elemental_resto)
 
     druid_common = [
-        MacroEnum.f_07_druid__0_common__16151_mb_consumable,
+        MacroEnum.f_07_druid__0_common__16151_gm_consumable,
         MacroEnum.f_07_druid__0_common__16102_bear_and_stun_zhTW,
         MacroEnum.f_07_druid__0_common__16103_cat_and_dash_zhTW,
         MacroEnum.f_07_druid__0_common__16104_cat_and_prowl_zhTW,

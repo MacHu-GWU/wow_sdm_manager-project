@@ -1,0 +1,29 @@
+name: Shaman-Consumable
+character:
+  name:
+  realm:
+type: b
+id: 14151
+icon: 195
+description: |
+  /target player
+  .add 40211 -20
+  .add 40211 20 # 速度药水, 增强萨 DPS 爆发用
+  .add 40212 -20
+  .add 40212 20 # 野性魔法药水, 元素萨 DPS 爆发用 (元素萨急速溢出了)
+  .add 33448 -20
+  .add 33448 20 # 符文法力药水, 治疗时回蓝用
+  .add 21537 -20
+  .add 21537 20 # 春节饺子, 按百分比回复 HP 和 MP 的食物
+  /targetlasttarget
+text: |
+  /target player
+  .add 40211 -20
+  .add 40211 20
+  .add 40212 -20
+  .add 40212 20
+  .add 33448 -20
+  .add 33448 20
+  .add 21537 -20
+  .add 21537 20
+  /targetlasttarget

@@ -1,0 +1,13 @@
+name: Buff-Self
+character:
+  name:
+  realm:
+type: b
+id: 14711
+icon:
+description: |
+  给自己上 Buff.
+text: |
+  #showtooltip
+  /castsequence [spec:1] reset=target 风怒武器,闪电之盾
+  /castsequence [spec:2] reset=target 火舌武器,水之护盾

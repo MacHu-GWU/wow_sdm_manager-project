@@ -1,0 +1,14 @@
+name: Burst
+character:
+  name:
+  realm:
+type: b
+id: 14712
+icon:
+description: |
+  开爆发技能. 增强萨是 召唤幽灵狼, 元素萨是开 精通元素 (提高施法速度).
+text: |
+  #showtooltip
+  /stopcasting
+  /cast [spec:1] 野性狼魂
+  /cast [spec:2] 元素掌握
