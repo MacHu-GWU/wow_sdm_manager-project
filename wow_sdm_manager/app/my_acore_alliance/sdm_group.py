@@ -189,20 +189,24 @@ class MacroGroupEnum:
     ]
     paladin_holy_protect = OrderedSet(paladin_holy_protect)
 
-    dk_blood_tank_unholy_dps = [
-        # Buff
-        MacroEnum.f_00_common__2003_buff_tank,
+    dk_common = [
         MacroEnum.f_00_common__2001_buff_physics_dps,
-        MacroEnum.f_03_dk__0_common__12101_consumable,
-        MacroEnum.f_03_dk__0_common__12123_frost_buff_self_zhTW,
-        MacroEnum.f_03_dk__0_common__12122_unholy_buff_self_zhTW,
-        # Act
+        MacroEnum.f_00_common__2003_buff_tank,
+        MacroEnum.f_03_dk__0_common__12151_gm_consumable,
         MacroEnum.f_03_dk__0_common__12111_act1_zhTW,
         MacroEnum.f_03_dk__0_common__12112_act2_zhTW,
         MacroEnum.f_03_dk__0_common__12113_act3_zhTW,
         MacroEnum.f_03_dk__0_common__12114_act4_zhTW,
         MacroEnum.f_03_dk__0_common__12131_tank_rotation_zhTW,
         MacroEnum.f_03_dk__0_common__12132_tank_survival_rotation_zhTW,
+    ]
+    dk_common = OrderedSet(dk_common)
+
+    dk_blood_tank_unholy_dps = [
+        *dk_common,
+        # Buff
+        MacroEnum.f_03_dk__0_common__12123_frost_buff_self_zhTW,
+        MacroEnum.f_03_dk__0_common__12122_unholy_buff_self_zhTW,
     ]
     dk_blood_tank_unholy_dps = OrderedSet(dk_blood_tank_unholy_dps)
 
