@@ -1,9 +1,9 @@
-name: Rotation
+name: Protect-Rotation
 character:
   name:
   realm:
 type: b
-id: 11131
+id: 11011
 icon:
 description: |
   防骑的一键宏循环.

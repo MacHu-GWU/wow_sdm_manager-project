@@ -1,0 +1,42 @@
+name: Paladin-Consumable
+character:
+  name:
+  realm:
+type: b
+id: 11151
+icon: 195
+description: |
+  给 60 级的多开司机圣骑士刷常用消耗品. 由于我们还手动添加了 牧师, 法师, 德鲁伊 的群体 buff 技能给圣骑士, 所以我们还需要这些施法材料
+  /target player
+  .add 13510 -20
+  .add 13510 20 # 泰坦合剂
+  .add 13511 -20
+  .add 13511 20 # 精炼智慧合剂
+  .add 21537 -20
+  .add 21537 20 # 春节饺子, 按百分比回复 HP 和 MP 的食物
+  .add 21177 -100
+  .add 21177 100 # 刷祝福施法材料
+  .add 17029 -20
+  .add 17029 20 # 牧师的蜡烛
+  .add 17020 -20
+  .add 17020 20 # 法师的魔粉
+  .add 17026 -20
+  .add 17026 20 # 德鲁伊的荆棘草
+  /targetlasttarget
+text: |
+  /target player
+  .add 13510 -20
+  .add 13510 20
+  .add 13511 -20
+  .add 13511 20
+  .add 21537 -20
+  .add 21537 20
+  .add 21177 -100
+  .add 21177 100
+  .add 17029 -20
+  .add 17029 20
+  .add 17020 -20
+  .add 17020 20
+  .add 17026 -20
+  .add 17026 20
+  /targetlasttarget

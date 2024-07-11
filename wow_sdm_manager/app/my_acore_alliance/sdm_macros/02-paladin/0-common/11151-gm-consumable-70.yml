@@ -3,11 +3,16 @@ character:
   name:
   realm:
 type: b
-id: 11103
+id: 11151
 icon: 195
 description: |
   给 70 级的圣骑士刷常用消耗品
-  40211 是速度药水, DPS 爆发用; 40093 是不灭药水, 坦克用于提高护甲; 33448 是符文法力药水, 治疗时回蓝用; 21537 是春节饺子, 按百分比回复 HP 和 MP 的食物; 21177 是施法材料;
+  /target player
+  .add 21537 -20
+  .add 21537 20 # 春节饺子, 按百分比回复 HP 和 MP 的食物
+  .add 21177 -100
+  .add 21177 100 # 施法材料
+  /targetlasttarget
 text: |
   /target player
   .add 21537 -20

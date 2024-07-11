@@ -64,22 +64,40 @@ class MacroGroupEnum:
     ]
     acc_common_mb_special = OrderedSet(acc_common_mb_special)
 
+    paladin_common = [
+        MacroEnum.f_02_paladin__0_common__11001_clear_debuff_zhTW,
+        MacroEnum.f_02_paladin__0_common__11002_raid_divine_sacrifice_zhTW,
+        MacroEnum.f_02_paladin__0_common__11151_gm_consumable,
+    ]
+    paladin_common = OrderedSet(paladin_common)
+
     paladin_protect_retri = [
-        # Buff
+        *paladin_common,
         MacroEnum.f_00_common__2003_buff_tank,
         MacroEnum.f_00_common__2001_buff_physics_dps,
-        MacroEnum.f_02_paladin__0_common__11101_consumable,
-        MacroEnum.f_02_paladin__0_common__11111_clear_debuff_zhTW,
         MacroEnum.f_02_paladin__1_protect_retri__11311_buff_self_alliance_zhTW,
-        # Act
         MacroEnum.f_02_paladin__1_protect_retri__11301_act1_zhTW,
         MacroEnum.f_02_paladin__1_protect_retri__11302_act2_zhTW,
         MacroEnum.f_02_paladin__1_protect_retri__11303_act3_zhTW,
         MacroEnum.f_02_paladin__1_protect_retri__11304_act4_zhTW,
-        MacroEnum.f_02_paladin__0_common__11131_protect_rotation_zhTW,
-        MacroEnum.f_02_paladin__0_common__11132_retribution_rotation_zhTW,
+        MacroEnum.f_02_paladin__1_protect_retri__11305_rotation_zhTW,
     ]
     paladin_protect_retri = OrderedSet(paladin_protect_retri)
+
+    paladin_holy_protect = [
+        *paladin_common,
+        MacroEnum.f_00_common__2003_buff_tank,
+        MacroEnum.f_00_common__2004_buff_healer,
+        MacroEnum.f_02_paladin__3_holy_protect__11701_act1_zhTW,
+        MacroEnum.f_02_paladin__3_holy_protect__11702_act2_zhTW,
+        MacroEnum.f_02_paladin__3_holy_protect__11703_buff_self_alliance_zhTW,
+        MacroEnum.f_02_paladin__3_holy_protect__11704_rotation_zhTW,
+        MacroEnum.f_02_paladin__3_holy_protect__11731_mb_periodical_beacon_zhTW,
+        MacroEnum.f_02_paladin__3_holy_protect__11732_mb_periodical_judgement_zhTW,
+        MacroEnum.f_02_paladin__0_common__27171_mb_high_int_heal_rotation_zhTW,
+        MacroEnum.f_02_paladin__0_common__27172_mb_high_crt_heal_rotation_zhTW,
+    ]
+    paladin_holy_protect = OrderedSet(paladin_holy_protect)
 
     shaman_common = [
         MacroEnum.f_05_shaman__0_common__14101_interrupt_zhTW,
@@ -168,26 +186,6 @@ class MacroGroupEnum:
         MacroEnum.f_07_druid__1_balance_resto__16332_mb_slow_heal_zhTW,
     ]
     druid_balance_resto = OrderedSet(druid_balance_resto)
-
-    paladin_holy_protect = [
-        # Buff
-        MacroEnum.f_00_common__2003_buff_tank,
-        MacroEnum.f_00_common__2004_buff_healer,
-        MacroEnum.f_02_paladin__0_common__11101_consumable,
-        MacroEnum.f_02_paladin__0_common__11111_clear_debuff_zhTW,
-        MacroEnum.f_02_paladin__0_common__11112_raid_divine_sacrifice_zhTW,
-        # Act
-        MacroEnum.f_02_paladin__0_common__27171_high_int_heal_rotation_zhTW,
-        MacroEnum.f_02_paladin__0_common__27172_high_crt_heal_rotation_zhTW,
-        MacroEnum.f_02_paladin__3_holy_protect__11751_mb_periodical_beacon_zhTW,
-        MacroEnum.f_02_paladin__3_holy_protect__11752_mb_periodical_judgement_zhTW,
-        MacroEnum.f_02_paladin__3_holy_protect__11711_act1_zhTW,
-        MacroEnum.f_02_paladin__3_holy_protect__11712_act2_zhTW,
-        MacroEnum.f_02_paladin__0_common__11133_holy_rotation_zhTW,
-        MacroEnum.f_02_paladin__0_common__11131_protect_rotation_zhTW,
-        MacroEnum.f_02_paladin__3_holy_protect__11731_buff_self_alliance_zhTW,
-    ]
-    paladin_holy_protect = OrderedSet(paladin_holy_protect)
 
     dk_common = [
         MacroEnum.f_00_common__2001_buff_physics_dps,

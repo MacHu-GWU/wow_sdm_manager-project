@@ -7,6 +7,13 @@ id: 2002
 icon: 806
 description: |
   GM 命令, 法系 DPS Buff (法师, 术士, 暗影牧师, 元素萨满, 平衡德鲁伊)
+  /target player
+  .aura 56525 # 王者祝福
+  .aura 10938 # 真言术:韧
+  .aura 10157 # 奥术智慧
+  .aura 27841 # 神圣精神  
+  .aura 9885 # 野性祝福
+  /targetlasttarget
 text: |
   /target player
   .aura 56525

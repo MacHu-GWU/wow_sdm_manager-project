@@ -1,9 +1,9 @@
-name: Rotation
+name: Retri-Rotation
 character:
   name:
   realm:
 type: b
-id: 11132
+id: 11012
 icon:
 description: |
   惩戒骑 的一键宏循环.

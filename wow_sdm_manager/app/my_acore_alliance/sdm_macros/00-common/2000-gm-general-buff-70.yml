@@ -1,0 +1,24 @@
+name: General-Buff-70
+character:
+  name:
+  realm:
+type: b
+id: 2000
+icon: 806
+description: |
+  基础属性 Buff
+  /target player
+  .aura 56525 # 王者祝福
+  .aura 25389 # 真言术:韧
+  .aura 27126 # 奥术智慧
+  .aura 25312 # 神圣精神
+  .aura 26990 # 野性祝福
+  /targetlasttarget
+text: |
+  /target player
+  .aura 56525
+  .aura 25389
+  .aura 27126
+  .aura 25312
+  .aura 26990
+  /targetlasttarget

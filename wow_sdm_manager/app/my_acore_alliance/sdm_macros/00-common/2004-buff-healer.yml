@@ -7,6 +7,25 @@ id: 2004
 icon: 806
 description: |
   GM 命令, 治疗 Buff (戒律/神圣牧师, 神圣圣骑士, 恢复萨满, 恢复德鲁伊)
+  /target player
+  .aura 56525 # 王者祝福
+  .aura 48161 # 真言术:韧
+  .aura 42995 # 奥术智慧
+  .aura 48073 # 神圣精神
+  .aura 48469 # 野性祝福
+  .aura 24907 # 枭兽光环
+  .aura 75447 # 凶猛灵感
+  .aura 54646 # 专注魔法
+  .aura 19746 # 专注光环
+  .unaura 58777
+  .aura 58777 # 法力之泉图腾
+  .unaura 57663
+  .aura 57663 # 天怒图腾
+  .unaura 2895
+  .aura 2895 # 空气图腾
+  .aura 57399 # 鲜鱼宴
+  .aura 54212 # 精炼智慧合剂
+  /targetlasttarget
 text: |
   /target player
   .aura 56525

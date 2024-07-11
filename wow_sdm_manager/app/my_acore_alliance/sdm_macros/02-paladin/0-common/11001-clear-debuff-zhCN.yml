@@ -3,11 +3,11 @@ character:
   name:
   realm:
 type: b
-id: 11111
+id: 11001
 icon:
 description: |
   开无敌后立刻取消, 清除身上的不利 Buff.
 text: |
   #showtooltip
-  /cancelaura 聖盾術
-  /cast 聖盾術
+  /cancelaura 圣盾术
+  /cast 圣盾术

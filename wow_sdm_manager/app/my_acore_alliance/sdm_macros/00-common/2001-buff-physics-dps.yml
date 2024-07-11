@@ -7,6 +7,23 @@ id: 2001
 icon: 806
 description: |
   GM 命令, 物理 DPS Buff (武器/狂暴战士, 战斗/刺杀/敏锐盗贼, 猫德, 猎人, 增强萨满)
+  /target player
+  .aura 48161 # 真言术:韧
+  .aura 48469 # 野性祝福
+  .aura 47436 # 战斗怒吼
+  .aura 56525 # 王者祝福
+  .aura 48942 # 虔诚光环
+  .aura 24932 # 兽群领袖
+  .unaura 34300
+  .aura 34300 # 强化兽群领袖
+  .aura 19506 # 强击光环
+  .aura 75447 # 凶猛灵感
+  .unaura 58646
+  .aura 58646 # 大地之力图腾
+  .aura 55610 # 强化寒冰爪
+  .aura 57399 # 鲜鱼宴
+  .aura 53760 # 无尽怒火合剂
+  /targetlasttarget
 text: |
   /target player
   .aura 48161

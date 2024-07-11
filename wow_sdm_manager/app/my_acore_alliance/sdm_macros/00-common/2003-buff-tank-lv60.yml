@@ -7,6 +7,13 @@ id: 2003
 icon: 806
 description: |
   GM 命令, Tank Buff (防御战士, 防御圣骑士, 防御死亡骑士, 熊坦德鲁伊)
+  /target player
+  .aura 56525 # 王者祝福
+  .aura 10938 # 真言术:韧
+  .aura 10157 # 奥术智慧
+  .aura 27841 # 神圣精神  
+  .aura 9885 # 野性祝福
+  /targetlasttarget
 text: |
   /target player
   .aura 56525
