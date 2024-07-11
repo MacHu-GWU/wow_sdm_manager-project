@@ -134,23 +134,28 @@ class MacroGroupEnum:
     ]
     warlock_demonology_affiliation = OrderedSet(warlock_demonology_affiliation)
 
-    hunter_marksmanship_survival = [
+    hunter_common = [
         MacroEnum.f_00_common__2001_buff_physics_dps,
-        MacroEnum.f_04_hunter__0_common__13101_consumable,
-        # Act
+        MacroEnum.f_04_hunter__0_common__13151_gm_consumable,
         MacroEnum.f_04_hunter__0_common__13102_misdirect_zhTW,
         MacroEnum.f_04_hunter__0_common__13103_tranquil_zhTW,
         MacroEnum.f_04_hunter__0_common__13104_pack_aspect_zhTW,
         MacroEnum.f_04_hunter__0_common__13105_viper_aspect_zhTW,
         MacroEnum.f_04_hunter__0_common__13106_burst_zhTW,
-        MacroEnum.f_04_hunter__1_marksmanship_survival__13301_buff_self_zhTW,
         MacroEnum.f_04_hunter__0_common__13111_act1_zhTW,
+    ]
+    hunter_common = OrderedSet(hunter_common)
+
+    hunter_marksmanship_survival = [
+        *hunter_common,
+        # Act
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13301_buff_self_zhTW,
         MacroEnum.f_04_hunter__1_marksmanship_survival__13312_act2_zhTW,
         MacroEnum.f_04_hunter__1_marksmanship_survival__13313_act3_zhTW,
         MacroEnum.f_04_hunter__1_marksmanship_survival__13314_act4_zhTW,
         MacroEnum.f_04_hunter__0_common__13121_marksmanship_rotation_zhTW,
         MacroEnum.f_04_hunter__0_common__13122_survival_rotation_zhTW,
-        MacroEnum.f_04_hunter__1_marksmanship_survival__13321_add_debuff_zhTW,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13351_gm_add_debuff_zhTW,
     ]
     hunter_marksmanship_survival = OrderedSet(hunter_marksmanship_survival)
 

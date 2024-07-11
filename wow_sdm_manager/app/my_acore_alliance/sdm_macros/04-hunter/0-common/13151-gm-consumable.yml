@@ -1,0 +1,33 @@
+name: Hunter-Consumable
+character:
+  name:
+  realm:
+type: b
+id: 13151
+icon: 195
+description: |
+  /target player
+  .add 40211 -20
+  .add 40211 20 # 速度药水, DPS 爆发用
+  .add 33448 -20
+  .add 33448 20 # 符文法力药水, 回蓝用
+  .add 21537 -20
+  .add 21537 20 # 春节饺子, 按百分比回复 HP 和 MP 的食物
+  .add 35953 -20
+  .add 35953 20 # 宠物食物肉类
+  .add 52021 -5000
+  .add 52021 5000 # 冰刃箭
+  /targetlasttarget
+text: |
+  /target player
+  .add 40211 -20
+  .add 40211 20
+  .add 33448 -20
+  .add 33448 20
+  .add 21537 -20
+  .add 21537 20
+  .add 35953 -20
+  .add 35953 20
+  .add 52021 -5000
+  .add 52021 5000
+  /targetlasttarget
