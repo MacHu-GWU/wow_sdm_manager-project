@@ -1,0 +1,17 @@
+name: Burst
+character:
+  name:
+  realm:
+type: b
+id: 17302
+icon:
+description: |
+  一键给自己上 Buff
+text: |
+  #showtooltip
+  /cast [spec:1,nopet] 召喚惡魔守衛
+  /cast [spec:2,nopet] 召喚惡魔獵犬
+  /castsequence [spec:1] reset=3 魔化護甲,靈魂鏈結,製造法術石
+  /castsequence [spec:2] reset=3 魔化護甲,製造法術石
+  /use 極大法術石
+  /use 16
