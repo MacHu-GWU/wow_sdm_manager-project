@@ -10,4 +10,4 @@ description: |
 text: |
   #showtooltip
   /cast [stance:0/1/2/4/5] 獵豹形態
-  /cast 潛行
+  /cast [stance:3]!潛行

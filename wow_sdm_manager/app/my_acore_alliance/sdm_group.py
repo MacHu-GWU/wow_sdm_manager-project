@@ -10,14 +10,6 @@ from wow_sdm_manager.vendor.importer import wow_sdm
 from wow_sdm_manager.app.my_acore_alliance.sdm_enum import MacroEnum
 
 
-druid_common = [
-    MacroEnum.f_07_druid__0_common__16101_consumable,
-    MacroEnum.f_07_druid__0_common__16102_bear_and_stun_zhTW,
-    MacroEnum.f_07_druid__0_common__16103_cat_and_dash_zhTW,
-    MacroEnum.f_07_druid__0_common__16104_cat_and_prowl_zhTW,
-]
-
-
 # ==============================================================================
 # START of manual editing
 # ==============================================================================
@@ -105,16 +97,21 @@ class MacroGroupEnum:
     ]
     shaman_elemental_resto = OrderedSet(shaman_elemental_resto)
 
+    druid_common = [
+        MacroEnum.f_07_druid__0_common__16151_mb_consumable,
+        MacroEnum.f_07_druid__0_common__16102_bear_and_stun_zhTW,
+        MacroEnum.f_07_druid__0_common__16103_cat_and_dash_zhTW,
+        MacroEnum.f_07_druid__0_common__16104_cat_and_prowl_zhTW,
+    ]
+
     druid_feral_balance = [
         *druid_common,
-        # Buff
         MacroEnum.f_00_common__2001_buff_physics_dps,
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_00_common__2003_buff_tank,
         MacroEnum.f_07_druid__3_feral_and_balance__16701_buff_self_bear_zhTW,
         MacroEnum.f_07_druid__3_feral_and_balance__16702_buff_raid_bear_zhTW,
-        # Act
-        MacroEnum.f_07_druid__3_feral_and_balance__16703_multibox_main_rotate_zhTW,
+        MacroEnum.f_07_druid__3_feral_and_balance__16731_multibox_main_rotate_bear_zhTW,
     ]
     druid_feral_balance = OrderedSet(druid_feral_balance)
 
@@ -157,13 +154,11 @@ class MacroGroupEnum:
 
     druid_balance_resto = [
         *druid_common,
-        # Buff
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_07_druid__1_balance_resto__16301_buff_self_zhTW,
         MacroEnum.f_07_druid__1_balance_resto__16302_buff_raid_zhTW,
-        # Act
-        MacroEnum.f_07_druid__1_balance_resto__16303_rotation_zhTW,
-        MacroEnum.f_07_druid__1_balance_resto__16304_multibox_slow_heal_zhTW,
+        MacroEnum.f_07_druid__1_balance_resto__16331_main_rotation_zhTW,
+        MacroEnum.f_07_druid__1_balance_resto__16332_mb_slow_heal_zhTW,
     ]
     druid_balance_resto = OrderedSet(druid_balance_resto)
 
