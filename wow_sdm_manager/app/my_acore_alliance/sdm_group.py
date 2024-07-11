@@ -239,8 +239,8 @@ class MacroGroupEnum:
     priest_common = [
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_00_common__2004_buff_healer,
-        MacroEnum.f_10_priest__0_common__19101_consumable,
-        MacroEnum.f_10_priest__0_common__19102_buff_raid_zhTW,
+        MacroEnum.f_10_priest__0_common__19101_buff_raid_zhTW,
+        MacroEnum.f_10_priest__0_common__19151_gm_consumable,
     ]
 
     priest_shadow_disc = [
@@ -248,16 +248,16 @@ class MacroGroupEnum:
         MacroEnum.f_10_priest__1_shadow_disc__19301_buff_self_zhTW,
         MacroEnum.f_10_priest__1_shadow_disc__19302_act1_zhTW,
         MacroEnum.f_10_priest__1_shadow_disc__19303_act2_zhTW,
-        MacroEnum.f_10_priest__1_shadow_disc__19311_mb_main_rotate_zhTW,
-        MacroEnum.f_10_priest__1_shadow_disc__19312_mb_heal_tank_rotate_zhTW,
+        MacroEnum.f_10_priest__1_shadow_disc__19331_mb_main_rotate_zhTW,
+        MacroEnum.f_10_priest__1_shadow_disc__19332_mb_heal_tank_rotate_zhTW,
     ]
     priest_shadow_disc = OrderedSet(priest_shadow_disc)
 
     priest_disc_holy = [
         *priest_common,
         MacroEnum.f_10_priest__2_disc_holy__19501_buff_self_zhTW,
-        MacroEnum.f_10_priest__2_disc_holy__19511_mb_main_rotate_zhTW,
-        MacroEnum.f_10_priest__2_disc_holy__19512_mb_heal_tank_rotate_zhTW,
+        MacroEnum.f_10_priest__2_disc_holy__19531_mb_main_rotate_zhTW,
+        MacroEnum.f_10_priest__2_disc_holy__19532_mb_heal_tank_rotate_zhTW,
     ]
     priest_disc_holy = OrderedSet(priest_disc_holy)
 
@@ -266,8 +266,8 @@ class MacroGroupEnum:
         MacroEnum.f_10_priest__3_holy_shadow__19701_buff_self_zhTW,
         MacroEnum.f_10_priest__3_holy_shadow__19702_act1_zhTW,
         MacroEnum.f_10_priest__3_holy_shadow__19703_act2_zhTW,
-        MacroEnum.f_10_priest__3_holy_shadow__19711_mb_main_rotate_zhTW,
-        MacroEnum.f_10_priest__3_holy_shadow__19712_mb_heal_tank_rotate_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19731_mb_main_rotate_zhTW,
+        MacroEnum.f_10_priest__3_holy_shadow__19732_mb_heal_tank_rotate_zhTW,
     ]
     priest_holy_shadow = OrderedSet(priest_holy_shadow)
 
