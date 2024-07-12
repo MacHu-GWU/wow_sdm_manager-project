@@ -3,15 +3,10 @@
 import sys
 from pathlib_mate import Path
 from ...vendor.importer import wow_sdm
-from .acc_enum import (
-    AccountEnum as AccEnum,
-    CharacterEnum as CharEnum,
-)
 from .acc_group import (
     AccountGroupEnum as AccGrpEnum,
     CharacterGroupEnum as CharGrpEnum,
 )
-from .sdm_enum import MacroEnum
 from .sdm_group import MacroGroupEnum
 from .sdm_mb_special import make_mb_special
 
@@ -67,7 +62,6 @@ char_macros = concat_lists(
         CharGrpEnum.paladin_holy_protect,
         MacroGroupEnum.paladin_holy_protect,
     ),
-
     # --- dk
     CharMap.make_many(
         CharGrpEnum.dk_blood_tank_unholy_dps,
@@ -87,7 +81,6 @@ char_macros = concat_lists(
         CharGrpEnum.hunter_marksmanship_survival,
         MacroGroupEnum.hunter_marksmanship_survival,
     ),
-
     # --- druid
     CharMap.make_many(
         CharGrpEnum.druid_balance_resto,
@@ -97,19 +90,16 @@ char_macros = concat_lists(
         CharGrpEnum.druid_feral_balance,
         MacroGroupEnum.druid_feral_balance,
     ),
-
     # --- warlock
     CharMap.make_many(
         CharGrpEnum.warlock_demonology_affiliation,
         MacroGroupEnum.warlock_demonology_affiliation,
     ),
-
     # --- mage
     CharMap.make_many(
         CharGrpEnum.mage_arcane_fire,
         MacroGroupEnum.mage_arcane_fire,
     ),
-
     # --- priest
     CharMap.make_many(
         CharGrpEnum.priest_holy_shadow,

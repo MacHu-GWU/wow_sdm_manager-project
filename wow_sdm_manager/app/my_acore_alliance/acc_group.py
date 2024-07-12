@@ -112,6 +112,8 @@ class CharacterGroupEnum:
     warlock_demonology_affiliation = [
         CharacterEnum.fat06_AzerothCore_rf,
     ]
+    warlock_affiliation_destruction = []
+    warlock_destruction_demonology = []
 
     # --- mage
     mage_arcane_fire = [

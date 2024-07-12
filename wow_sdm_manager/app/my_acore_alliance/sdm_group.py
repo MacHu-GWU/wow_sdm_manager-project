@@ -260,6 +260,16 @@ class MacroGroupEnum:
     ]
     warlock_demonology_affiliation = OrderedSet(warlock_demonology_affiliation)
 
+    warlock_affiliation_destruction = [
+        *warlock_common,
+    ]
+    warlock_affiliation_destruction = OrderedSet(warlock_affiliation_destruction)
+
+    warlock_destruction_demonology = [
+        *warlock_common,
+    ]
+    warlock_destruction_demonology = OrderedSet(warlock_destruction_demonology)
+
     # --------------------------------------------------------------------------
     # mage
     # --------------------------------------------------------------------------
