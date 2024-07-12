@@ -95,6 +95,9 @@ class CharacterGroupEnum:
 
     druid_balance_resto = [
         CharacterEnum.fat08_AzerothCore_rh,
+        CharacterEnum.fat11_AzerothCore_rk,
+        CharacterEnum.fat12_AzerothCore_rl,
+        CharacterEnum.fat13_AzerothCore_rm,
     ]
 
     paladin_holy_protect = [
@@ -119,14 +122,6 @@ class CharacterGroupEnum:
 
     priest_disc_holy = [
         CharacterEnum.fat25_AzerothCore_ry,
-        CharacterEnum.fat15_AzerothCore_ro,
-        CharacterEnum.fat16_AzerothCore_rp,
-        CharacterEnum.fat17_AzerothCore_rq,
-        CharacterEnum.fat18_AzerothCore_rr,
-        CharacterEnum.fat19_AzerothCore_rs,
-        CharacterEnum.fat20_AzerothCore_rt,
-        CharacterEnum.fat21_AzerothCore_ru,
-        CharacterEnum.fat22_AzerothCore_rv,
     ]
 
 # ==============================================================================

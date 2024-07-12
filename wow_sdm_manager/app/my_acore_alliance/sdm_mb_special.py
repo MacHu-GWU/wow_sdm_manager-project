@@ -33,7 +33,7 @@ def make_r_abcdefghij_solo_icc_boss1() -> T.List[AccMap]:
     这是一个例子, 实现了在打 ICC Boss1 的时候, Special 宏是选中骨刺.
     """
     return AccMap.make_many(
-        AccGrpEnum.alliance_r_1_to_10,
+        AccGrpEnum.alliance_r_1_to_25,
         [
             MacroEnum.f_00_common__6001_mb_special1_icc_boss1_target_bone_zhTW,
             MacroEnum.f_00_common__6002_mb_special2,

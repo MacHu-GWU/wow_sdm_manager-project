@@ -98,6 +98,10 @@ char_macros = concat_lists(
         CharGrpEnum.dk_blood_tank_unholy_dps,
         MacroGroupEnum.dk_blood_tank_unholy_dps,
     ),
+    CharMap.make_many(
+        CharGrpEnum.priest_shadow_disc,
+        MacroGroupEnum.priest_shadow_disc,
+    ),
 )
 
 # ==============================================================================
