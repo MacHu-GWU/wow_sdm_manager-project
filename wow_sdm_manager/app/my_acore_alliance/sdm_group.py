@@ -181,6 +181,7 @@ class MacroGroupEnum:
     druid_balance_resto = [
         *druid_common,
         MacroEnum.f_00_common__2002_buff_caster_dps,
+        MacroEnum.f_00_common__2004_buff_healer,
         MacroEnum.f_07_druid__1_balance_resto__16301_buff_self_zhTW,
         MacroEnum.f_07_druid__1_balance_resto__16302_buff_raid_zhTW,
         MacroEnum.f_07_druid__1_balance_resto__16331_main_rotation_zhTW,
