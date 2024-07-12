@@ -140,6 +140,7 @@ class MacroGroupEnum:
         MacroEnum.f_08_warlock__0_common__17101_corruption_zhTW,
         MacroEnum.f_08_warlock__0_common__17102_elemental_curse_zhTW,
         MacroEnum.f_08_warlock__0_common__17103_tongue_curse_zhTW,
+        MacroEnum.f_08_warlock__0_common__17151_gm_consumable,
     ]
     warlock_common = OrderedSet(warlock_common)
 
@@ -148,6 +149,7 @@ class MacroGroupEnum:
         MacroEnum.f_08_warlock__1_demonology_affiliation__17301_burst_zhTW,
         MacroEnum.f_08_warlock__1_demonology_affiliation__17302_buff_self_zhTW,
         MacroEnum.f_08_warlock__1_demonology_affiliation__17331_mb_main_rotate_zhTW,
+        MacroEnum.f_08_warlock__1_demonology_affiliation__17351_gm_add_debuff_zhTW,
     ]
     warlock_demonology_affiliation = OrderedSet(warlock_demonology_affiliation)
 
