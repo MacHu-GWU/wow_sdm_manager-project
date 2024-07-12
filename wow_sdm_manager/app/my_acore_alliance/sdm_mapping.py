@@ -67,6 +67,12 @@ char_macros = concat_lists(
         CharGrpEnum.paladin_holy_protect,
         MacroGroupEnum.paladin_holy_protect,
     ),
+
+    # --- dk
+    CharMap.make_many(
+        CharGrpEnum.dk_blood_tank_unholy_dps,
+        MacroGroupEnum.dk_blood_tank_unholy_dps,
+    ),
     # --- shaman
     CharMap.make_many(
         CharGrpEnum.shaman_elemental_resto,
@@ -75,6 +81,11 @@ char_macros = concat_lists(
     CharMap.make_many(
         CharGrpEnum.shaman_resto_enhancement,
         MacroGroupEnum.shaman_resto_enhancement,
+    ),
+    # --- hunter
+    CharMap.make_many(
+        CharGrpEnum.hunter_marksmanship_survival,
+        MacroGroupEnum.hunter_marksmanship_survival,
     ),
 
     # --- druid
@@ -87,24 +98,16 @@ char_macros = concat_lists(
         MacroGroupEnum.druid_feral_balance,
     ),
 
-    CharMap.make_many(
-        CharGrpEnum.mage_arcane_fire,
-        MacroGroupEnum.mage_arcane_fire,
-    ),
-
+    # --- warlock
     CharMap.make_many(
         CharGrpEnum.warlock_demonology_affiliation,
         MacroGroupEnum.warlock_demonology_affiliation,
     ),
 
+    # --- mage
     CharMap.make_many(
-        CharGrpEnum.hunter_marksmanship_survival,
-        MacroGroupEnum.hunter_marksmanship_survival,
-    ),
-
-    CharMap.make_many(
-        CharGrpEnum.dk_blood_tank_unholy_dps,
-        MacroGroupEnum.dk_blood_tank_unholy_dps,
+        CharGrpEnum.mage_arcane_fire,
+        MacroGroupEnum.mage_arcane_fire,
     ),
 
     # --- priest
