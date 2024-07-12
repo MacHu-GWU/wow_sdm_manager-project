@@ -65,50 +65,65 @@ class AccountGroupEnum:
 class CharacterGroupEnum:
     all_characters = get_values(CharacterEnum)
 
+    # --- paladin
     paladin_protect_retri = [
         CharacterEnum.fat01_AzerothCore_ra,
     ]
+    paladin_retri_holy = []
+    paladin_holy_protect = [
+        CharacterEnum.fat09_AzerothCore_ri,
+        CharacterEnum.fat24_AzerothCore_rx,
+    ]
 
+    # --- dk
+    dk_blood_tank_unholy_dps = [
+        CharacterEnum.fat10_AzerothCore_rj,
+    ]
+
+    # --- shaman
     shaman_elemental_resto = [
         CharacterEnum.fat02_AzerothCore_rb,
     ]
-
-    druid_feral_balance = [
-        CharacterEnum.fat03_AzerothCore_rc,
+    shaman_resto_enhancement = [
+        CharacterEnum.fat23_AzerothCore_rw,
     ]
+    shaman_enhancement_elemental = []
 
-    mage_arcane_fire = [
-        CharacterEnum.fat04_AzerothCore_rd,
-    ]
-
-    priest_holy_shadow = [
-        CharacterEnum.fat05_AzerothCore_re,
-    ]
-
-    warlock_demonology_affiliation = [
-        CharacterEnum.fat06_AzerothCore_rf,
-    ]
-
+    # --- hunter
     hunter_marksmanship_survival = [
         CharacterEnum.fat07_AzerothCore_rg,
     ]
+    hunter_survival_beast = []
+    hunter_beast_marksmanship = []
 
+    # --- druid
+    druid_feral_balance = [
+        CharacterEnum.fat03_AzerothCore_rc,
+    ]
     druid_balance_resto = [
         CharacterEnum.fat08_AzerothCore_rh,
         CharacterEnum.fat11_AzerothCore_rk,
         CharacterEnum.fat12_AzerothCore_rl,
         CharacterEnum.fat13_AzerothCore_rm,
     ]
+    druid_resto_feral = []
 
-    paladin_holy_protect = [
-        CharacterEnum.fat09_AzerothCore_ri,
-        CharacterEnum.fat24_AzerothCore_rx,
+    # --- warlock
+    warlock_demonology_affiliation = [
+        CharacterEnum.fat06_AzerothCore_rf,
     ]
 
-    dk_blood_tank_unholy_dps = [
-        CharacterEnum.fat10_AzerothCore_rj,
+    # --- mage
+    mage_arcane_fire = [
+        CharacterEnum.fat04_AzerothCore_rd,
     ]
+    mage_fire_frost = []
+    mage_frost_arcane = []
 
+    # --- priest
+    priest_holy_shadow = [
+        CharacterEnum.fat05_AzerothCore_re,
+    ]
     priest_shadow_disc = [
         CharacterEnum.fat14_AzerothCore_rn,
         CharacterEnum.fat15_AzerothCore_ro,
@@ -120,14 +135,10 @@ class CharacterGroupEnum:
         CharacterEnum.fat21_AzerothCore_ru,
         CharacterEnum.fat22_AzerothCore_rv,
     ]
-
-    shaman_resto_enhancement = [
-        CharacterEnum.fat23_AzerothCore_rw,
-    ]
-
     priest_disc_holy = [
         CharacterEnum.fat25_AzerothCore_ry,
     ]
+
 
 # ==============================================================================
 # END of manual editing

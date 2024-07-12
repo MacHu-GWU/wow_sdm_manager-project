@@ -64,6 +64,9 @@ class MacroGroupEnum:
     ]
     acc_common_mb_special = OrderedSet(acc_common_mb_special)
 
+    # --------------------------------------------------------------------------
+    # paladin
+    # --------------------------------------------------------------------------
     paladin_common = [
         MacroEnum.f_02_paladin__0_common__11001_clear_debuff_zhTW,
         MacroEnum.f_02_paladin__0_common__11002_raid_divine_sacrifice_zhTW,
@@ -84,6 +87,11 @@ class MacroGroupEnum:
     ]
     paladin_protect_retri = OrderedSet(paladin_protect_retri)
 
+    paladin_retri_holy = [
+        *paladin_common,
+    ]
+    paladin_retri_holy = OrderedSet(paladin_retri_holy)
+
     paladin_holy_protect = [
         *paladin_common,
         MacroEnum.f_00_common__2003_buff_tank,
@@ -99,6 +107,32 @@ class MacroGroupEnum:
     ]
     paladin_holy_protect = OrderedSet(paladin_holy_protect)
 
+    # --------------------------------------------------------------------------
+    # dk
+    # --------------------------------------------------------------------------
+    dk_common = [
+        MacroEnum.f_00_common__2001_buff_physics_dps,
+        MacroEnum.f_00_common__2003_buff_tank,
+        MacroEnum.f_03_dk__0_common__12151_gm_consumable,
+        MacroEnum.f_03_dk__0_common__12111_act1_zhTW,
+        MacroEnum.f_03_dk__0_common__12112_act2_zhTW,
+        MacroEnum.f_03_dk__0_common__12113_act3_zhTW,
+        MacroEnum.f_03_dk__0_common__12114_act4_zhTW,
+        MacroEnum.f_03_dk__0_common__12131_tank_rotation_zhTW,
+        MacroEnum.f_03_dk__0_common__12132_tank_survival_rotation_zhTW,
+    ]
+    dk_common = OrderedSet(dk_common)
+
+    dk_blood_tank_unholy_dps = [
+        *dk_common,
+        MacroEnum.f_03_dk__0_common__12123_frost_buff_self_zhTW,
+        MacroEnum.f_03_dk__0_common__12122_unholy_buff_self_zhTW,
+    ]
+    dk_blood_tank_unholy_dps = OrderedSet(dk_blood_tank_unholy_dps)
+
+    # --------------------------------------------------------------------------
+    # shaman
+    # --------------------------------------------------------------------------
     shaman_common = [
         MacroEnum.f_05_shaman__0_common__14101_interrupt_zhTW,
         MacroEnum.f_05_shaman__0_common__14131_mb_resto_periodic_earth_shield_zhTW,
@@ -108,7 +142,6 @@ class MacroGroupEnum:
 
     shaman_elemental_resto = [
         *shaman_common,
-        # Buff
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_00_common__2004_buff_healer,
         MacroEnum.f_05_shaman__1_elemental_resto__14311_buff_self_zhTW,
@@ -119,7 +152,6 @@ class MacroGroupEnum:
 
     shaman_resto_enhancement = [
         *shaman_common,
-        # Buff
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_00_common__2004_buff_healer,
         MacroEnum.f_05_shaman__2_resto_enhancement__14511_buff_self_zhTW,
@@ -128,6 +160,51 @@ class MacroGroupEnum:
     ]
     shaman_resto_enhancement = OrderedSet(shaman_resto_enhancement)
 
+    shaman_enhancement_elemental = [
+        *shaman_common,
+    ]
+    shaman_enhancement_elemental = OrderedSet(shaman_enhancement_elemental)
+
+    # --------------------------------------------------------------------------
+    # hunter
+    # --------------------------------------------------------------------------
+    hunter_common = [
+        MacroEnum.f_00_common__2001_buff_physics_dps,
+        MacroEnum.f_04_hunter__0_common__13151_gm_consumable,
+        MacroEnum.f_04_hunter__0_common__13102_misdirect_zhTW,
+        MacroEnum.f_04_hunter__0_common__13103_tranquil_zhTW,
+        MacroEnum.f_04_hunter__0_common__13104_pack_aspect_zhTW,
+        MacroEnum.f_04_hunter__0_common__13105_viper_aspect_zhTW,
+        MacroEnum.f_04_hunter__0_common__13106_burst_zhTW,
+        MacroEnum.f_04_hunter__0_common__13111_act1_zhTW,
+    ]
+    hunter_common = OrderedSet(hunter_common)
+
+    hunter_marksmanship_survival = [
+        *hunter_common,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13301_buff_self_zhTW,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13312_act2_zhTW,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13313_act3_zhTW,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13314_act4_zhTW,
+        MacroEnum.f_04_hunter__0_common__13121_marksmanship_rotation_zhTW,
+        MacroEnum.f_04_hunter__0_common__13122_survival_rotation_zhTW,
+        MacroEnum.f_04_hunter__1_marksmanship_survival__13351_gm_add_debuff_zhTW,
+    ]
+    hunter_marksmanship_survival = OrderedSet(hunter_marksmanship_survival)
+
+    hunter_survival_beast = [
+        *hunter_common,
+    ]
+    hunter_survival_beast = OrderedSet(hunter_survival_beast)
+
+    hunter_beast_marksmanship = [
+        *hunter_common,
+    ]
+    hunter_beast_marksmanship = OrderedSet(hunter_beast_marksmanship)
+
+    # --------------------------------------------------------------------------
+    # druid
+    # --------------------------------------------------------------------------
     druid_common = [
         MacroEnum.f_07_druid__0_common__16151_gm_consumable,
         MacroEnum.f_07_druid__0_common__16102_bear_and_stun_zhTW,
@@ -146,6 +223,25 @@ class MacroGroupEnum:
     ]
     druid_feral_balance = OrderedSet(druid_feral_balance)
 
+    druid_balance_resto = [
+        *druid_common,
+        MacroEnum.f_00_common__2002_buff_caster_dps,
+        MacroEnum.f_00_common__2004_buff_healer,
+        MacroEnum.f_07_druid__1_balance_resto__16301_buff_self_zhTW,
+        MacroEnum.f_07_druid__1_balance_resto__16302_buff_raid_zhTW,
+        MacroEnum.f_07_druid__1_balance_resto__16331_main_rotation_zhTW,
+        MacroEnum.f_07_druid__1_balance_resto__16332_mb_slow_heal_zhTW,
+    ]
+    druid_balance_resto = OrderedSet(druid_balance_resto)
+
+    druid_resto_feral = [
+        *druid_common,
+    ]
+    druid_resto_feral = OrderedSet(druid_resto_feral)
+
+    # --------------------------------------------------------------------------
+    # warlock
+    # --------------------------------------------------------------------------
     warlock_common = [
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_08_warlock__0_common__17101_corruption_zhTW,
@@ -164,63 +260,9 @@ class MacroGroupEnum:
     ]
     warlock_demonology_affiliation = OrderedSet(warlock_demonology_affiliation)
 
-    hunter_common = [
-        MacroEnum.f_00_common__2001_buff_physics_dps,
-        MacroEnum.f_04_hunter__0_common__13151_gm_consumable,
-        MacroEnum.f_04_hunter__0_common__13102_misdirect_zhTW,
-        MacroEnum.f_04_hunter__0_common__13103_tranquil_zhTW,
-        MacroEnum.f_04_hunter__0_common__13104_pack_aspect_zhTW,
-        MacroEnum.f_04_hunter__0_common__13105_viper_aspect_zhTW,
-        MacroEnum.f_04_hunter__0_common__13106_burst_zhTW,
-        MacroEnum.f_04_hunter__0_common__13111_act1_zhTW,
-    ]
-    hunter_common = OrderedSet(hunter_common)
-
-    hunter_marksmanship_survival = [
-        *hunter_common,
-        # Act
-        MacroEnum.f_04_hunter__1_marksmanship_survival__13301_buff_self_zhTW,
-        MacroEnum.f_04_hunter__1_marksmanship_survival__13312_act2_zhTW,
-        MacroEnum.f_04_hunter__1_marksmanship_survival__13313_act3_zhTW,
-        MacroEnum.f_04_hunter__1_marksmanship_survival__13314_act4_zhTW,
-        MacroEnum.f_04_hunter__0_common__13121_marksmanship_rotation_zhTW,
-        MacroEnum.f_04_hunter__0_common__13122_survival_rotation_zhTW,
-        MacroEnum.f_04_hunter__1_marksmanship_survival__13351_gm_add_debuff_zhTW,
-    ]
-    hunter_marksmanship_survival = OrderedSet(hunter_marksmanship_survival)
-
-    druid_balance_resto = [
-        *druid_common,
-        MacroEnum.f_00_common__2002_buff_caster_dps,
-        MacroEnum.f_00_common__2004_buff_healer,
-        MacroEnum.f_07_druid__1_balance_resto__16301_buff_self_zhTW,
-        MacroEnum.f_07_druid__1_balance_resto__16302_buff_raid_zhTW,
-        MacroEnum.f_07_druid__1_balance_resto__16331_main_rotation_zhTW,
-        MacroEnum.f_07_druid__1_balance_resto__16332_mb_slow_heal_zhTW,
-    ]
-    druid_balance_resto = OrderedSet(druid_balance_resto)
-
-    dk_common = [
-        MacroEnum.f_00_common__2001_buff_physics_dps,
-        MacroEnum.f_00_common__2003_buff_tank,
-        MacroEnum.f_03_dk__0_common__12151_gm_consumable,
-        MacroEnum.f_03_dk__0_common__12111_act1_zhTW,
-        MacroEnum.f_03_dk__0_common__12112_act2_zhTW,
-        MacroEnum.f_03_dk__0_common__12113_act3_zhTW,
-        MacroEnum.f_03_dk__0_common__12114_act4_zhTW,
-        MacroEnum.f_03_dk__0_common__12131_tank_rotation_zhTW,
-        MacroEnum.f_03_dk__0_common__12132_tank_survival_rotation_zhTW,
-    ]
-    dk_common = OrderedSet(dk_common)
-
-    dk_blood_tank_unholy_dps = [
-        *dk_common,
-        # Buff
-        MacroEnum.f_03_dk__0_common__12123_frost_buff_self_zhTW,
-        MacroEnum.f_03_dk__0_common__12122_unholy_buff_self_zhTW,
-    ]
-    dk_blood_tank_unholy_dps = OrderedSet(dk_blood_tank_unholy_dps)
-
+    # --------------------------------------------------------------------------
+    # mage
+    # --------------------------------------------------------------------------
     mage_common = [
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_09_mage__0_common__18101_interrupt_zhTW,
@@ -254,6 +296,9 @@ class MacroGroupEnum:
     ]
     mage_frost_arcane = OrderedSet(mage_frost_arcane)
 
+    # --------------------------------------------------------------------------
+    # priest
+    # --------------------------------------------------------------------------
     priest_common = [
         MacroEnum.f_00_common__2002_buff_caster_dps,
         MacroEnum.f_00_common__2004_buff_healer,
