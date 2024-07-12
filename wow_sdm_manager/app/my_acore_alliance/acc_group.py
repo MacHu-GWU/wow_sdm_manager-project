@@ -102,6 +102,7 @@ class CharacterGroupEnum:
 
     paladin_holy_protect = [
         CharacterEnum.fat09_AzerothCore_ri,
+        CharacterEnum.fat24_AzerothCore_rx,
     ]
 
     dk_blood_tank_unholy_dps = [
@@ -118,6 +119,10 @@ class CharacterGroupEnum:
         CharacterEnum.fat20_AzerothCore_rt,
         CharacterEnum.fat21_AzerothCore_ru,
         CharacterEnum.fat22_AzerothCore_rv,
+    ]
+
+    shaman_resto_enhancement = [
+        CharacterEnum.fat23_AzerothCore_rw,
     ]
 
     priest_disc_holy = [

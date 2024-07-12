@@ -1,0 +1,32 @@
+name: Resto-and-Enhancement-PvE-Shaman-Main-Rotate
+character:
+  name:
+  realm:
+type: b
+id: 14531
+icon:
+description: |
+  奶萨和增强的主力循环
+  
+  **恢复萨的治疗循环**. 
+  
+  恢复萨的主力循环以一个激流 6 秒 CD 的周期内完成一个循环. 无脑随机选择团队目标进行治疗. 平时该宏如下:
+
+  #showtooltip
+  #/targetraid
+  /castsequence reset=6 激流,治療鍊,治療波,次級治療波
+
+  在长时间的的战斗中为了保证不空蓝, 可以在循环中穿插不耗蓝的水之盾技能, 降低蓝耗:
+
+  #showtooltip
+  #/targetraid
+  /castsequence reset=6 激流,治療鍊,水之盾,治療波,次級治療波
+
+  甚至可以更极端一点:
+
+  #showtooltip
+  #/targetraid
+  /castsequence reset=6 激流,治療鍊,水之盾,治療波,次級治療波,水之盾
+text: |
+  #showtooltip
+  /castsequence [spec:1] reset=6 激流,治療鍊,水之盾,治療波,次級治療波,水之盾

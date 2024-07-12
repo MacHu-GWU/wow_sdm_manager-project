@@ -58,49 +58,67 @@ acc_macros = concat_lists(
 # char_macros
 # ------------------------------------------------------------------------------
 char_macros = concat_lists(
+    # --- paladin
     CharMap.make_many(
         CharGrpEnum.paladin_protect_retri,
         MacroGroupEnum.paladin_protect_retri,
     ),
     CharMap.make_many(
+        CharGrpEnum.paladin_holy_protect,
+        MacroGroupEnum.paladin_holy_protect,
+    ),
+    # --- shaman
+    CharMap.make_many(
         CharGrpEnum.shaman_elemental_resto,
         MacroGroupEnum.shaman_elemental_resto,
     ),
     CharMap.make_many(
-        CharGrpEnum.druid_feral_balance,
-        MacroGroupEnum.druid_feral_balance,
+        CharGrpEnum.shaman_resto_enhancement,
+        MacroGroupEnum.shaman_resto_enhancement,
     ),
-    CharMap.make_many(
-        CharGrpEnum.mage_arcane_fire,
-        MacroGroupEnum.mage_arcane_fire,
-    ),
-    CharMap.make_many(
-        CharGrpEnum.priest_holy_shadow,
-        MacroGroupEnum.priest_holy_shadow,
-    ),
-    CharMap.make_many(
-        CharGrpEnum.warlock_demonology_affiliation,
-        MacroGroupEnum.warlock_demonology_affiliation,
-    ),
-    CharMap.make_many(
-        CharGrpEnum.hunter_marksmanship_survival,
-        MacroGroupEnum.hunter_marksmanship_survival,
-    ),
+
+    # --- druid
     CharMap.make_many(
         CharGrpEnum.druid_balance_resto,
         MacroGroupEnum.druid_balance_resto,
     ),
     CharMap.make_many(
-        CharGrpEnum.paladin_holy_protect,
-        MacroGroupEnum.paladin_holy_protect,
+        CharGrpEnum.druid_feral_balance,
+        MacroGroupEnum.druid_feral_balance,
     ),
+
+    CharMap.make_many(
+        CharGrpEnum.mage_arcane_fire,
+        MacroGroupEnum.mage_arcane_fire,
+    ),
+
+    CharMap.make_many(
+        CharGrpEnum.warlock_demonology_affiliation,
+        MacroGroupEnum.warlock_demonology_affiliation,
+    ),
+
+    CharMap.make_many(
+        CharGrpEnum.hunter_marksmanship_survival,
+        MacroGroupEnum.hunter_marksmanship_survival,
+    ),
+
     CharMap.make_many(
         CharGrpEnum.dk_blood_tank_unholy_dps,
         MacroGroupEnum.dk_blood_tank_unholy_dps,
     ),
+
+    # --- priest
+    CharMap.make_many(
+        CharGrpEnum.priest_holy_shadow,
+        MacroGroupEnum.priest_holy_shadow,
+    ),
     CharMap.make_many(
         CharGrpEnum.priest_shadow_disc,
         MacroGroupEnum.priest_shadow_disc,
+    ),
+    CharMap.make_many(
+        CharGrpEnum.priest_disc_holy,
+        MacroGroupEnum.priest_disc_holy,
     ),
 )
 

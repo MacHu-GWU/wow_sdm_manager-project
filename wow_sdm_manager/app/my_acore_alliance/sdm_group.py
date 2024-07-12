@@ -117,6 +117,17 @@ class MacroGroupEnum:
     ]
     shaman_elemental_resto = OrderedSet(shaman_elemental_resto)
 
+    shaman_resto_enhancement = [
+        *shaman_common,
+        # Buff
+        MacroEnum.f_00_common__2002_buff_caster_dps,
+        MacroEnum.f_00_common__2004_buff_healer,
+        MacroEnum.f_05_shaman__2_resto_enhancement__14511_buff_self_zhTW,
+        MacroEnum.f_05_shaman__2_resto_enhancement__14512_burst_zhTW,
+        MacroEnum.f_05_shaman__2_resto_enhancement__14531_mb_main_rotation_zhTW,
+    ]
+    shaman_resto_enhancement = OrderedSet(shaman_resto_enhancement)
+
     druid_common = [
         MacroEnum.f_07_druid__0_common__16151_gm_consumable,
         MacroEnum.f_07_druid__0_common__16102_bear_and_stun_zhTW,
